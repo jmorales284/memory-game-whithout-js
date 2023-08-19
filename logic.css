@@ -1,0 +1,1161 @@
+/* Animation for changing order */
+
+@keyframes changeOrder {
+    from {
+      z-index: 6;
+    }
+    to {
+      z-index: 1;
+    }
+  }
+
+/* Animation show and hide */
+label:nth-of-type(1) {
+  animation-delay: 0s;
+}
+label:nth-of-type(2) {
+  animation-delay: -0.5s;
+}
+label:nth-of-type(3) {
+  animation-delay: -1s;
+}
+label:nth-of-type(4) {
+  animation-delay: -1.5s;
+}
+label:nth-of-type(5) {
+  animation-delay: -2s;
+}
+label:nth-of-type(6) {
+  animation-delay: -1.2s;
+} 
+
+.MensajeGanaste {
+  display: none;
+}
+
+  /* --------------------- Dado 1 --------------------- */
+  #D1:checked ~ main label:nth-of-type(12) {order: 4;}
+  #D1:checked ~ main label:nth-of-type(2) {order: 14;}
+  #D1:checked ~ main label:nth-of-type(8) {order: 1;}
+  #D1:checked ~ main label:nth-of-type(15) {order: 6;}
+  #D1:checked ~ main label:nth-of-type(10) {order: 9;}
+  #D1:checked ~ main label:nth-of-type(6) {order: 2;}
+  #D1:checked ~ main label:nth-of-type(14) {order: 11;}
+  #D1:checked ~ main label:nth-of-type(3) {order: 5;}
+  #D1:checked ~ main label:nth-of-type(11) {order: 8;}
+  #D1:checked ~ main label:nth-of-type(9) {order: 12;}
+  #D1:checked ~ main label:nth-of-type(16) {order: 15;}
+  #D1:checked ~ main label:nth-of-type(13) {order: 10;}
+  #D1:checked ~ main label:nth-of-type(7) {order: 16;}
+  #D1:checked ~ main label:nth-of-type(4) {order: 3;}
+  #D1:checked ~ main label:nth-of-type(5) {order: 7;}
+  #D1:checked ~ main label:nth-of-type(1) {order: 13;}
+  /* --------------------- Dado 2 --------------------- */
+  #D2:checked ~ main label:nth-of-type(8) {order: 4;}
+  #D2:checked ~ main label:nth-of-type(11) {order: 9;}
+  #D2:checked ~ main label:nth-of-type(10) {order: 3;}
+  #D2:checked ~ main label:nth-of-type(14) {order: 5;}
+  #D2:checked ~ main label:nth-of-type(6) {order: 14;}
+  #D2:checked ~ main label:nth-of-type(12) {order: 8;}
+  #D2:checked ~ main label:nth-of-type(4) {order: 11;}
+  #D2:checked ~ main label:nth-of-type(3) {order: 15;}
+  #D2:checked ~ main label:nth-of-type(5) {order: 2;}
+  #D2:checked ~ main label:nth-of-type(1) {order: 1;}
+  #D2:checked ~ main label:nth-of-type(7) {order: 12;}
+  #D2:checked ~ main label:nth-of-type(2) {order: 6;}
+  #D2:checked ~ main label:nth-of-type(15) {order: 10;}
+  #D2:checked ~ main label:nth-of-type(9) {order: 13;}
+  #D2:checked ~ main label:nth-of-type(16) {order: 16;}
+  #D2:checked ~ main label:nth-of-type(13) {order: 7;}
+  /* --------------------- Dado 3 --------------------- */
+  #D3:checked ~ main label:nth-of-type(7) {order: 4;}
+  #D3:checked ~ main label:nth-of-type(2) {order: 12;}
+  #D3:checked ~ main label:nth-of-type(9) {order: 6;}
+  #D3:checked ~ main label:nth-of-type(4) {order: 9;}
+  #D3:checked ~ main label:nth-of-type(5) {order: 14;}
+  #D3:checked ~ main label:nth-of-type(3) {order: 15;}
+  #D3:checked ~ main label:nth-of-type(1) {order: 1;}
+  #D3:checked ~ main label:nth-of-type(11) {order: 11;}
+  #D3:checked ~ main label:nth-of-type(10) {order: 2;}
+  #D3:checked ~ main label:nth-of-type(13) {order: 8;}
+  #D3:checked ~ main label:nth-of-type(12) {order: 5;}
+  #D3:checked ~ main label:nth-of-type(6) {order: 3;}
+  #D3:checked ~ main label:nth-of-type(15) {order: 7;}
+  #D3:checked ~ main label:nth-of-type(16) {order: 13;}
+  #D3:checked ~ main label:nth-of-type(14) {order: 16;}
+  /* --------------------- Dado 4 --------------------- */
+  #D4:checked ~ main label:nth-of-type(2) {order: 7;}
+  #D4:checked ~ main label:nth-of-type(14) {order: 6;}
+  #D4:checked ~ main label:nth-of-type(12) {order: 1;}
+  #D4:checked ~ main label:nth-of-type(5) {order: 10;}
+  #D4:checked ~ main label:nth-of-type(11) {order: 4;}
+  #D4:checked ~ main label:nth-of-type(3) {order: 11;}
+  #D4:checked ~ main label:nth-of-type(6) {order: 15;}
+  #D4:checked ~ main label:nth-of-type(1) {order: 12;}
+  #D4:checked ~ main label:nth-of-type(16) {order: 5;}
+  #D4:checked ~ main label:nth-of-type(10) {order: 9;}
+  #D4:checked ~ main label:nth-of-type(4) {order: 2;}
+  #D4:checked ~ main label:nth-of-type(7) {order: 13;}
+  #D4:checked ~ main label:nth-of-type(9) {order: 16;}
+  #D4:checked ~ main label:nth-of-type(8) {order: 14;}
+  #D4:checked ~ main label:nth-of-type(13) {order: 3;}
+  #D4:checked ~ main label:nth-of-type(15) {order: 8;}
+  /* --------------------- Dado 5 --------------------- */
+  #D5:checked ~ main label:nth-of-type(4) {order: 4;}
+  #D5:checked ~ main label:nth-of-type(9) {order: 10;}
+  #D5:checked ~ main label:nth-of-type(12) {order: 6;}
+  #D5:checked ~ main label:nth-of-type(5) {order: 1;}
+  #D5:checked ~ main label:nth-of-type(6) {order: 13;}
+  #D5:checked ~ main label:nth-of-type(3) {order: 2;}
+  #D5:checked ~ main label:nth-of-type(8) {order: 7;}
+  #D5:checked ~ main label:nth-of-type(11) {order: 11;}
+  #D5:checked ~ main label:nth-of-type(14) {order: 9;}
+  #D5:checked ~ main label:nth-of-type(2) {order: 15;}
+  #D5:checked ~ main label:nth-of-type(7) {order: 3;}
+  #D5:checked ~ main label:nth-of-type(13) {order: 8;}
+  #D5:checked ~ main label:nth-of-type(10) {order: 14;}
+  #D5:checked ~ main label:nth-of-type(1) {order: 12;}
+  #D5:checked ~ main label:nth-of-type(15) {order: 16;}
+  #D5:checked ~ main label:nth-of-type(16) {order: 5;}
+  /* --------------------- Dado 6 --------------------- */
+  #D6:checked ~ main label:nth-of-type(7) {order: 4;}
+  #D6:checked ~ main label:nth-of-type(5) {order: 10;}
+  #D6:checked ~ main label:nth-of-type(14) {order: 7;}
+  #D6:checked ~ main label:nth-of-type(11) {order: 2;}
+  #D6:checked ~ main label:nth-of-type(10) {order: 13;}
+  #D6:checked ~ main label:nth-of-type(13) {order: 6;}
+  #D6:checked ~ main label:nth-of-type(2) {order: 9;}
+  #D6:checked ~ main label:nth-of-type(3) {order: 16;}
+  #D6:checked ~ main label:nth-of-type(6) {order: 12;}
+  #D6:checked ~ main label:nth-of-type(8) {order: 15;}
+  #D6:checked ~ main label:nth-of-type(1) {order: 1;}
+  #D6:checked ~ main label:nth-of-type(12) {order: 5;}
+  #D6:checked ~ main label:nth-of-type(15) {order: 3;}
+  #D6:checked ~ main label:nth-of-type(16) {order: 11;}
+  #D6:checked ~ main label:nth-of-type(4) {order: 8;}
+  #D6:checked ~ main label:nth-of-type(9) {order: 14;}
+
+/* tapar GenerarAzar cuando clickeado */
+#D1:checked ~ .GenerarAzar,
+#D2:checked ~ .GenerarAzar,
+#D3:checked ~ .GenerarAzar,
+#D4:checked ~ .GenerarAzar,
+#D5:checked ~ .GenerarAzar,
+#D6:checked ~ .GenerarAzar {
+  display: none;
+}
+
+
+/* Voltear la carta cuando se clickea */
+#PinkFloyd1:checked ~ .Carta1 .CartaInterior,
+#PinkFloyd2:checked ~ .Carta2 .CartaInterior,
+#ACDC1:checked ~ .Carta3 .CartaInterior,
+#ACDC2:checked ~ .Carta4 .CartaInterior,
+#ArcticMonkeys1:checked ~ .Carta5 .CartaInterior,
+#ArcticMonkeys2:checked ~ .Carta6 .CartaInterior,
+#AeroSmith1:checked ~ .Carta7 .CartaInterior,
+#AeroSmith2:checked ~ .Carta8 .CartaInterior,
+#GreenDay1:checked ~ .Carta9 .CartaInterior,
+#GreenDay2:checked ~ .Carta10 .CartaInterior,
+#GunsNRoses1:checked ~ .Carta11 .CartaInterior,
+#GunsNRoses2:checked ~ .Carta12 .CartaInterior,
+#MotleyCrue1:checked ~ .Carta13 .CartaInterior,
+#MotleyCrue2:checked ~ .Carta14 .CartaInterior,
+#Nirvana1:checked ~ .Carta15 .CartaInterior,
+#Nirvana2:checked ~ .Carta16 .CartaInterior {
+  transform: rotateY(180deg);
+}
+
+/* Desactivar el click cuando las dos cartas son iguales*/
+#PinkFloyd1:checked + #PinkFloyd2:checked ~ .Carta1,
+#PinkFloyd1:checked + #PinkFloyd2:checked ~ .Carta2,
+#ACDC1:checked + #ACDC2:checked ~ .Carta3,
+#ACDC1:checked + #ACDC2:checked ~ .Carta4,
+#ArcticMonkeys1:checked + #ArcticMonkeys2:checked ~ .Carta5,
+#ArcticMonkeys1:checked + #ArcticMonkeys2:checked ~ .Carta6,
+#AeroSmith1:checked + #AeroSmith2:checked ~ .Carta7,
+#AeroSmith1:checked + #AeroSmith2:checked ~ .Carta8,
+#GreenDay1:checked + #GreenDay2:checked ~ .Carta9,
+#GreenDay1:checked + #GreenDay2:checked ~ .Carta10,
+#GunsNRoses1:checked + #GunsNRoses2:checked ~ .Carta11,
+#GunsNRoses1:checked + #GunsNRoses2:checked ~ .Carta12,
+#MotleyCrue1:checked + #MotleyCrue2:checked ~ .Carta13,
+#MotleyCrue1:checked + #MotleyCrue2:checked ~ .Carta14,
+#Nirvana1:checked + #Nirvana2:checked ~ .Carta15,
+#Nirvana1:checked + #Nirvana2:checked ~ .Carta16 {
+  pointer-events: none;
+}
+
+/* ------------------------------------- Bloquear todas las cartas cuando dos no son iguales -------------------------------------- */
+/* --------------------------------------------------- Patron para #PinkFloyd1 --------------------------------------------------- */
+#PinkFloyd1:checked ~ #PinkFloyd2:not(:checked) ~ #ACDC1:checked ~ #ACDC2:not(:checked) ~ label:not(:nth-of-type(1)):not(:nth-of-type(3)),
+#PinkFloyd1:checked ~ #PinkFloyd2:not(:checked) ~ #ACDC1:not(:checked) ~ #ACDC2:checked ~ label:not(:nth-of-type(1)):not(:nth-of-type(4)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#PinkFloyd1:checked ~ #PinkFloyd2:not(:checked) ~ #ArcticMonkeys1:checked ~ #ArcticMonkeys2:not(:checked) ~ label:not(:nth-of-type(1)):not(:nth-of-type(5)),
+#PinkFloyd1:checked ~ #PinkFloyd2:not(:checked) ~ #ArcticMonkeys1:not(:checked) ~ #ArcticMonkeys2:checked ~ label:not(:nth-of-type(1)):not(:nth-of-type(6)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#PinkFloyd1:checked ~ #PinkFloyd2:not(:checked) ~ #AeroSmith1:checked ~ #AeroSmith2:not(:checked) ~ label:not(:nth-of-type(1)):not(:nth-of-type(7)),
+#PinkFloyd1:checked ~ #PinkFloyd2:not(:checked) ~ #AeroSmith1:not(:checked) ~ #AeroSmith2:checked ~ label:not(:nth-of-type(1)):not(:nth-of-type(8)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#PinkFloyd1:checked ~ #PinkFloyd2:not(:checked) ~ #GreenDay1:checked ~ #GreenDay2:not(:checked) ~ label:not(:nth-of-type(1)):not(:nth-of-type(9)),
+#PinkFloyd1:checked ~ #PinkFloyd2:not(:checked) ~ #GreenDay1:not(:checked) ~ #GreenDay2:checked ~ label:not(:nth-of-type(1)):not(:nth-of-type(10)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#PinkFloyd1:checked ~ #PinkFloyd2:not(:checked) ~ #GunsNRoses1:checked ~ #GunsNRoses2:not(:checked) ~ label:not(:nth-of-type(1)):not(:nth-of-type(11)),
+#PinkFloyd1:checked ~ #PinkFloyd2:not(:checked) ~ #GunsNRoses1:not(:checked) ~ #GunsNRoses2:checked ~ label:not(:nth-of-type(1)):not(:nth-of-type(12)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#PinkFloyd1:checked ~ #PinkFloyd2:not(:checked) ~ #MotleyCrue1:checked ~ #MotleyCrue2:not(:checked) ~ label:not(:nth-of-type(1)):not(:nth-of-type(13)),
+#PinkFloyd1:checked ~ #PinkFloyd2:not(:checked) ~ #MotleyCrue1:not(:checked) ~ #MotleyCrue2:checked ~ label:not(:nth-of-type(1)):not(:nth-of-type(14)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#PinkFloyd1:checked ~ #PinkFloyd2:not(:checked) ~ #Nirvana1:checked ~ #Nirvana2:not(:checked) ~ label:not(:nth-of-type(1)):not(:nth-of-type(15)),
+#PinkFloyd1:checked ~ #PinkFloyd2:not(:checked) ~ #Nirvana1:not(:checked) ~ #Nirvana2:checked ~ label:not(:nth-of-type(1)):not(:nth-of-type(16)),
+
+
+/* --------------------------------------------------- Patron para #PinkFloyd2 --------------------------------------------------- */
+
+
+#PinkFloyd1:not(:checked) ~ #PinkFloyd2:checked ~ #ACDC1:checked ~ #ACDC2:not(:checked) ~ label:not(:nth-of-type(2)):not(:nth-of-type(3)),
+#PinkFloyd1:not(:checked) ~ #PinkFloyd2:checked ~ #ACDC1:not(:checked) ~ #ACDC2:checked ~ label:not(:nth-of-type(2)):not(:nth-of-type(4)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#PinkFloyd1:not(:checked) ~ #PinkFloyd2:checked ~ #ArcticMonkeys1:checked ~ #ArcticMonkeys2:not(:checked) ~ label:not(:nth-of-type(2)):not(:nth-of-type(5)),
+#PinkFloyd1:not(:checked) ~ #PinkFloyd2:checked ~ #ArcticMonkeys1:not(:checked) ~ #ArcticMonkeys2:checked ~ label:not(:nth-of-type(2)):not(:nth-of-type(6)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#PinkFloyd1:not(:checked) ~ #PinkFloyd2:checked ~ #AeroSmith1:checked ~ #AeroSmith2:not(:checked) ~ label:not(:nth-of-type(2)):not(:nth-of-type(7)),
+#PinkFloyd1:not(:checked) ~ #PinkFloyd2:checked ~ #AeroSmith1:not(:checked) ~ #AeroSmith2:checked ~ label:not(:nth-of-type(2)):not(:nth-of-type(8)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#PinkFloyd1:not(:checked) ~ #PinkFloyd2:checked ~ #GreenDay1:checked ~ #GreenDay2:not(:checked) ~ label:not(:nth-of-type(2)):not(:nth-of-type(9)),
+#PinkFloyd1:not(:checked) ~ #PinkFloyd2:checked ~ #GreenDay1:not(:checked) ~ #GreenDay2:checked ~ label:not(:nth-of-type(2)):not(:nth-of-type(10)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#PinkFloyd1:not(:checked) ~ #PinkFloyd2:checked ~ #GunsNRoses1:checked ~ #GunsNRoses2:not(:checked) ~ label:not(:nth-of-type(2)):not(:nth-of-type(11)),
+#PinkFloyd1:not(:checked) ~ #PinkFloyd2:checked ~ #GunsNRoses1:not(:checked) ~ #GunsNRoses2:checked ~ label:not(:nth-of-type(2)):not(:nth-of-type(12)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#PinkFloyd1:not(:checked) ~ #PinkFloyd2:checked ~ #MotleyCrue1:checked ~ #MotleyCrue2:not(:checked) ~ label:not(:nth-of-type(2)):not(:nth-of-type(13)),
+#PinkFloyd1:not(:checked) ~ #PinkFloyd2:checked ~ #MotleyCrue1:not(:checked) ~ #MotleyCrue2:checked ~ label:not(:nth-of-type(2)):not(:nth-of-type(14)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#PinkFloyd1:not(:checked) ~ #PinkFloyd2:checked ~ #Nirvana1:checked ~ #Nirvana2:not(:checked) ~ label:not(:nth-of-type(2)):not(:nth-of-type(15)),
+#PinkFloyd1:not(:checked) ~ #PinkFloyd2:checked ~ #Nirvana1:not(:checked) ~ #Nirvana2:checked ~ label:not(:nth-of-type(2)):not(:nth-of-type(16)),
+
+
+/* --------------------------------------------------- Patron para #ACDC1 --------------------------------------------------- */
+
+
+#PinkFloyd1:checked ~ #PinkFloyd2:not(:checked) ~ #ACDC1:checked ~ #ACDC2:not(:checked) ~ label:not(:nth-of-type(1)):not(:nth-of-type(3)),
+#PinkFloyd1:not(:checked) ~ #PinkFloyd2:checked ~ #ACDC1:checked ~ #ACDC2:not(:checked) ~ label:not(:nth-of-type(2)):not(:nth-of-type(3)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ACDC1:checked ~ #ACDC2:not(:checked) ~ #ArcticMonkeys1:checked ~ #ArcticMonkeys2:not(:checked) ~ label:not(:nth-of-type(3)):not(:nth-of-type(5)),
+#ACDC1:checked ~ #ACDC2:not(:checked) ~ #ArcticMonkeys1:not(:checked) ~ #ArcticMonkeys2:checked ~ label:not(:nth-of-type(3)):not(:nth-of-type(6)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ACDC1:checked ~ #ACDC2:not(:checked) ~ #AeroSmith1:checked ~ #AeroSmith2:not(:checked) ~ label:not(:nth-of-type(3)):not(:nth-of-type(7)),
+#ACDC1:checked ~ #ACDC2:not(:checked) ~ #AeroSmith1:not(:checked) ~ #AeroSmith2:checked ~ label:not(:nth-of-type(3)):not(:nth-of-type(8)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ACDC1:checked ~ #ACDC2:not(:checked) ~ #GreenDay1:checked ~ #GreenDay2:not(:checked) ~ label:not(:nth-of-type(3)):not(:nth-of-type(9)),
+#ACDC1:checked ~ #ACDC2:not(:checked) ~ #GreenDay1:not(:checked) ~ #GreenDay2:checked ~ label:not(:nth-of-type(3)):not(:nth-of-type(10)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ACDC1:checked ~ #ACDC2:not(:checked) ~ #GunsNRoses1:checked ~ #GunsNRoses2:not(:checked) ~ label:not(:nth-of-type(3)):not(:nth-of-type(11)),
+#ACDC1:checked ~ #ACDC2:not(:checked) ~ #GunsNRoses1:not(:checked) ~ #GunsNRoses2:checked ~ label:not(:nth-of-type(3)):not(:nth-of-type(12)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ACDC1:checked ~ #ACDC2:not(:checked) ~ #MotleyCrue1:checked ~ #MotleyCrue2:not(:checked) ~ label:not(:nth-of-type(3)):not(:nth-of-type(13)),
+#ACDC1:checked ~ #ACDC2:not(:checked) ~ #MotleyCrue1:not(:checked) ~ #MotleyCrue2:checked ~ label:not(:nth-of-type(3)):not(:nth-of-type(14)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ACDC1:checked ~ #ACDC2:not(:checked) ~ #Nirvana1:checked ~ #Nirvana2:not(:checked) ~ label:not(:nth-of-type(3)):not(:nth-of-type(15)),
+#ACDC1:checked ~ #ACDC2:not(:checked) ~ #Nirvana1:not(:checked) ~ #Nirvana2:checked ~ label:not(:nth-of-type(3)):not(:nth-of-type(16))
+
+
+/* --------------------------------------------------- Patron para #ACDC2 --------------------------------------------------- */
+
+
+#PinkFloyd1:checked ~ #PinkFloyd2:not(:checked) ~ #ACDC1:not(:checked) ~ #ACDC2:checked ~ label:not(:nth-of-type(1)):not(:nth-of-type(4)),
+#PinkFloyd1:not(:checked) ~ #PinkFloyd2:checked ~ #ACDC1:not(:checked) ~ #ACDC2:checked ~ label:not(:nth-of-type(2)):not(:nth-of-type(4)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ACDC1:not(:checked) ~ #ACDC2:checked ~ #ArcticMonkeys1:checked ~ #ArcticMonkeys2:not(:checked) ~ label:not(:nth-of-type(4)):not(:nth-of-type(5)),
+#ACDC1:not(:checked) ~ #ACDC2:checked ~ #ArcticMonkeys1:not(:checked) ~ #ArcticMonkeys2:checked ~ label:not(:nth-of-type(4)):not(:nth-of-type(6)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ACDC1:not(:checked) ~ #ACDC2:checked ~ #AeroSmith1:checked ~ #AeroSmith2:not(:checked) ~ label:not(:nth-of-type(4)):not(:nth-of-type(7)),
+#ACDC1:not(:checked) ~ #ACDC2:checked ~ #AeroSmith1:not(:checked) ~ #AeroSmith2:checked ~ label:not(:nth-of-type(4)):not(:nth-of-type(8)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ACDC1:not(:checked) ~ #ACDC2:checked ~ #GreenDay1:checked ~ #GreenDay2:not(:checked) ~ label:not(:nth-of-type(4)):not(:nth-of-type(9)),
+#ACDC1:not(:checked) ~ #ACDC2:checked ~ #GreenDay1:not(:checked) ~ #GreenDay2:checked ~ label:not(:nth-of-type(4)):not(:nth-of-type(10)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ACDC1:not(:checked) ~ #ACDC2:checked ~ #GunsNRoses1:checked ~ #GunsNRoses2:not(:checked) ~ label:not(:nth-of-type(4)):not(:nth-of-type(11)),
+#ACDC1:not(:checked) ~ #ACDC2:checked ~ #GunsNRoses1:not(:checked) ~ #GunsNRoses2:checked ~ label:not(:nth-of-type(4)):not(:nth-of-type(12)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ACDC1:not(:checked) ~ #ACDC2:checked ~ #MotleyCrue1:checked ~ #MotleyCrue2:not(:checked) ~ label:not(:nth-of-type(4)):not(:nth-of-type(13)),
+#ACDC1:not(:checked) ~ #ACDC2:checked ~ #MotleyCrue1:not(:checked) ~ #MotleyCrue2:checked ~ label:not(:nth-of-type(4)):not(:nth-of-type(14)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ACDC1:not(:checked) ~ #ACDC2:checked ~ #Nirvana1:checked ~ #Nirvana2:not(:checked) ~ label:not(:nth-of-type(4)):not(:nth-of-type(15)),
+#ACDC1:not(:checked) ~ #ACDC2:checked ~ #Nirvana1:not(:checked) ~ #Nirvana2:checked ~ label:not(:nth-of-type(4)):not(:nth-of-type(16)),
+
+
+/* --------------------------------------------------- Patron para #ArcticMonkeys1 --------------------------------------------------- */
+
+
+#PinkFloyd1:checked ~ #PinkFloyd2:not(:checked) ~ #ArcticMonkeys1:checked ~ #ArcticMonkeys2:not(:checked) ~ label:not(:nth-of-type(1)):not(:nth-of-type(5)),
+#PinkFloyd1:not(:checked) ~ #PinkFloyd2:checked ~ #ArcticMonkeys1:checked ~ #ArcticMonkeys2:not(:checked) ~ label:not(:nth-of-type(2)):not(:nth-of-type(5)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ACDC1:checked ~ #ACDC2:not(:checked) ~ #ArcticMonkeys1:checked ~ #ArcticMonkeys2:not(:checked) ~ label:not(:nth-of-type(3)):not(:nth-of-type(5)),
+#ACDC1:not(:checked) ~ #ACDC2:checked ~ #ArcticMonkeys1:checked ~ #ArcticMonkeys2:not(:checked) ~ label:not(:nth-of-type(4)):not(:nth-of-type(5)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ArcticMonkeys1:checked ~ #ArcticMonkeys2:not(:checked) ~ #AeroSmith1:checked ~ #AeroSmith2:not(:checked) ~ label:not(:nth-of-type(5)):not(:nth-of-type(7)),
+#ArcticMonkeys1:checked ~ #ArcticMonkeys2:not(:checked) ~ #AeroSmith1:not(:checked) ~ #AeroSmith2:checked ~ label:not(:nth-of-type(5)):not(:nth-of-type(8)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ArcticMonkeys1:checked ~ #ArcticMonkeys2:not(:checked) ~ #GreenDay1:checked ~ #GreenDay2:not(:checked) ~ label:not(:nth-of-type(5)):not(:nth-of-type(9)),
+#ArcticMonkeys1:checked ~ #ArcticMonkeys2:not(:checked) ~ #GreenDay1:not(:checked) ~ #GreenDay2:checked ~ label:not(:nth-of-type(5)):not(:nth-of-type(10)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ArcticMonkeys1:checked ~ #ArcticMonkeys2:not(:checked) ~ #GunsNRoses1:checked ~ #GunsNRoses2:not(:checked) ~ label:not(:nth-of-type(5)):not(:nth-of-type(11)),
+#ArcticMonkeys1:checked ~ #ArcticMonkeys2:not(:checked) ~ #GunsNRoses1:not(:checked) ~ #GunsNRoses2:checked ~ label:not(:nth-of-type(5)):not(:nth-of-type(12)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ArcticMonkeys1:checked ~ #ArcticMonkeys2:not(:checked) ~ #MotleyCrue1:checked ~ #MotleyCrue2:not(:checked) ~ label:not(:nth-of-type(5)):not(:nth-of-type(13)),
+#ArcticMonkeys1:checked ~ #ArcticMonkeys2:not(:checked) ~ #MotleyCrue1:not(:checked) ~ #MotleyCrue2:checked ~ label:not(:nth-of-type(5)):not(:nth-of-type(14)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ArcticMonkeys1:checked ~ #ArcticMonkeys2:not(:checked) ~ #Nirvana1:checked ~ #Nirvana2:not(:checked) ~ label:not(:nth-of-type(5)):not(:nth-of-type(15)),
+#ArcticMonkeys1:checked ~ #ArcticMonkeys2:not(:checked) ~ #Nirvana1:not(:checked) ~ #Nirvana2:checked ~ label:not(:nth-of-type(5)):not(:nth-of-type(16)),
+
+
+/* --------------------------------------------------- Patron para #ArcticMonkeys2 --------------------------------------------------- */
+
+
+#PinkFloyd1:checked ~ #PinkFloyd2:not(:checked) ~ #ArcticMonkeys1:not(:checked) ~ #ArcticMonkeys2:checked ~ label:not(:nth-of-type(1)):not(:nth-of-type(6)),
+#PinkFloyd1:not(:checked) ~ #PinkFloyd2:checked ~ #ArcticMonkeys1:not(:checked) ~ #ArcticMonkeys2:checked ~ label:not(:nth-of-type(2)):not(:nth-of-type(6)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ACDC1:checked ~ #ACDC2:not(:checked) ~ #ArcticMonkeys1:not(:checked) ~ #ArcticMonkeys2:checked ~ label:not(:nth-of-type(3)):not(:nth-of-type(6)),
+#ACDC1:not(:checked) ~ #ACDC2:checked ~ #ArcticMonkeys1:not(:checked) ~ #ArcticMonkeys2:checked ~ label:not(:nth-of-type(4)):not(:nth-of-type(6)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ArcticMonkeys1:not(:checked) ~ #ArcticMonkeys2:checked ~ #AeroSmith1:checked ~ #AeroSmith2:not(:checked) ~ label:not(:nth-of-type(5)):not(:nth-of-type(7)),
+#ArcticMonkeys1:not(:checked) ~ #ArcticMonkeys2:checked ~ #AeroSmith1:not(:checked) ~ #AeroSmith2:checked ~ label:not(:nth-of-type(5)):not(:nth-of-type(8)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ArcticMonkeys1:not(:checked) ~ #ArcticMonkeys2:checked ~ #GreenDay1:checked ~ #GreenDay2:not(:checked) ~ label:not(:nth-of-type(5)):not(:nth-of-type(9)),
+#ArcticMonkeys1:not(:checked) ~ #ArcticMonkeys2:checked ~ #GreenDay1:not(:checked) ~ #GreenDay2:checked ~ label:not(:nth-of-type(5)):not(:nth-of-type(10)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ArcticMonkeys1:not(:checked) ~ #ArcticMonkeys2:checked ~ #GunsNRoses1:checked ~ #GunsNRoses2:not(:checked) ~ label:not(:nth-of-type(5)):not(:nth-of-type(11)),
+#ArcticMonkeys1:not(:checked) ~ #ArcticMonkeys2:checked ~ #GunsNRoses1:not(:checked) ~ #GunsNRoses2:checked ~ label:not(:nth-of-type(5)):not(:nth-of-type(12)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ArcticMonkeys1:not(:checked) ~ #ArcticMonkeys2:checked ~ #MotleyCrue1:checked ~ #MotleyCrue2:not(:checked) ~ label:not(:nth-of-type(5)):not(:nth-of-type(13)),
+#ArcticMonkeys1:not(:checked) ~ #ArcticMonkeys2:checked ~ #MotleyCrue1:not(:checked) ~ #MotleyCrue2:checked ~ label:not(:nth-of-type(5)):not(:nth-of-type(14)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ArcticMonkeys1:not(:checked) ~ #ArcticMonkeys2:checked ~ #Nirvana1:checked ~ #Nirvana2:not(:checked) ~ label:not(:nth-of-type(5)):not(:nth-of-type(15)),
+#ArcticMonkeys1:not(:checked) ~ #ArcticMonkeys2:checked ~ #Nirvana1:not(:checked) ~ #Nirvana2:checked ~ label:not(:nth-of-type(5)):not(:nth-of-type(16)),
+
+
+/* --------------------------------------------------- Patron para #AeroSmith1 --------------------------------------------------- */
+
+
+#PinkFloyd1:checked ~ #PinkFloyd2:not(:checked) ~ #AeroSmith1:checked ~ #AeroSmith2:not(:checked) ~ label:not(:nth-of-type(1)):not(:nth-of-type(7)),
+#PinkFloyd1:not(:checked) ~ #PinkFloyd2:checked ~ #AeroSmith1:checked ~ #AeroSmith2:not(:checked) ~ label:not(:nth-of-type(2)):not(:nth-of-type(7)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ACDC1:checked ~ #ACDC2:not(:checked) ~ #AeroSmith1:checked ~ #AeroSmith2:not(:checked) ~ label:not(:nth-of-type(3)):not(:nth-of-type(7)),
+#ACDC1:not(:checked) ~ #ACDC2:checked ~ #AeroSmith1:checked ~ #AeroSmith2:not(:checked) ~ label:not(:nth-of-type(4)):not(:nth-of-type(7)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ArcticMonkeys1:checked ~ #ArcticMonkeys2:not(:checked) ~ #AeroSmith1:checked ~ #AeroSmith2:not(:checked) ~ label:not(:nth-of-type(5)):not(:nth-of-type(7)),
+#ArcticMonkeys1:not(:checked) ~ #ArcticMonkeys2:checked ~ #AeroSmith1:checked ~ #AeroSmith2:not(:checked) ~ label:not(:nth-of-type(6)):not(:nth-of-type(7)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#AeroSmith1:checked ~ #AeroSmith2:not(:checked) ~ #GreenDay1:checked ~ #GreenDay2:not(:checked) ~ label:not(:nth-of-type(7)):not(:nth-of-type(9)),
+#AeroSmith1:checked ~ #AeroSmith2:not(:checked) ~ #GreenDay1:not(:checked) ~ #GreenDay2:checked ~ label:not(:nth-of-type(7)):not(:nth-of-type(10)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#AeroSmith1:checked ~ #AeroSmith2:not(:checked) ~ #GunsNRoses1:checked ~ #GunsNRoses2:not(:checked) ~ label:not(:nth-of-type(7)):not(:nth-of-type(11)),
+#AeroSmith1:checked ~ #AeroSmith2:not(:checked) ~ #GunsNRoses1:not(:checked) ~ #GunsNRoses2:checked ~ label:not(:nth-of-type(7)):not(:nth-of-type(12)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#AeroSmith1:checked ~ #AeroSmith2:not(:checked) ~ #MotleyCrue1:checked ~ #MotleyCrue2:not(:checked) ~ label:not(:nth-of-type(7)):not(:nth-of-type(13)),
+#AeroSmith1:checked ~ #AeroSmith2:not(:checked) ~ #MotleyCrue1:not(:checked) ~ #MotleyCrue2:checked ~ label:not(:nth-of-type(7)):not(:nth-of-type(14)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#AeroSmith1:checked ~ #AeroSmith2:not(:checked) ~ #Nirvana1:checked ~ #Nirvana2:not(:checked) ~ label:not(:nth-of-type(7)):not(:nth-of-type(15)),
+#AeroSmith1:checked ~ #AeroSmith2:not(:checked) ~ #Nirvana1:not(:checked) ~ #Nirvana2:checked ~ label:not(:nth-of-type(7)):not(:nth-of-type(16)),
+
+
+/* --------------------------------------------------- Patron para #AeroSmith2 --------------------------------------------------- */
+
+
+#PinkFloyd1:checked ~ #PinkFloyd2:not(:checked) ~ #AeroSmith1:not(:checked) ~ #AeroSmith2:checked ~ label:not(:nth-of-type(1)):not(:nth-of-type(8)),
+#PinkFloyd1:not(:checked) ~ #PinkFloyd2:checked ~ #AeroSmith1:not(:checked) ~ #AeroSmith2:checked ~ label:not(:nth-of-type(2)):not(:nth-of-type(8)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ACDC1:checked ~ #ACDC2:not(:checked) ~ #AeroSmith1:not(:checked) ~ #AeroSmith2:checked ~ label:not(:nth-of-type(3)):not(:nth-of-type(8)),
+#ACDC1:not(:checked) ~ #ACDC2:checked ~ #AeroSmith1:not(:checked) ~ #AeroSmith2:checked ~ label:not(:nth-of-type(4)):not(:nth-of-type(8)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ArcticMonkeys1:checked ~ #ArcticMonkeys2:not(:checked) ~ #AeroSmith1:not(:checked) ~ #AeroSmith2:checked ~ label:not(:nth-of-type(5)):not(:nth-of-type(8)),
+#ArcticMonkeys1:not(:checked) ~ #ArcticMonkeys2:checked ~ #AeroSmith1:not(:checked) ~ #AeroSmith2:checked ~ label:not(:nth-of-type(6)):not(:nth-of-type(8)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#AeroSmith1:not(:checked) ~ #AeroSmith2:checked ~ #GreenDay1:checked ~ #GreenDay2:not(:checked) ~ label:not(:nth-of-type(7)):not(:nth-of-type(9)),
+#AeroSmith1:not(:checked) ~ #AeroSmith2:checked ~ #GreenDay1:not(:checked) ~ #GreenDay2:checked ~ label:not(:nth-of-type(7)):not(:nth-of-type(10)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#AeroSmith1:not(:checked) ~ #AeroSmith2:checked ~ #GunsNRoses1:checked ~ #GunsNRoses2:not(:checked) ~ label:not(:nth-of-type(7)):not(:nth-of-type(11)),
+#AeroSmith1:not(:checked) ~ #AeroSmith2:checked ~ #GunsNRoses1:not(:checked) ~ #GunsNRoses2:checked ~ label:not(:nth-of-type(7)):not(:nth-of-type(12)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#AeroSmith1:not(:checked) ~ #AeroSmith2:checked ~ #MotleyCrue1:checked ~ #MotleyCrue2:not(:checked) ~ label:not(:nth-of-type(7)):not(:nth-of-type(13)),
+#AeroSmith1:not(:checked) ~ #AeroSmith2:checked ~ #MotleyCrue1:not(:checked) ~ #MotleyCrue2:checked ~ label:not(:nth-of-type(7)):not(:nth-of-type(14)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#AeroSmith1:not(:checked) ~ #AeroSmith2:checked ~ #Nirvana1:checked ~ #Nirvana2:not(:checked) ~ label:not(:nth-of-type(7)):not(:nth-of-type(15)),
+#AeroSmith1:not(:checked) ~ #AeroSmith2:checked ~ #Nirvana1:not(:checked) ~ #Nirvana2:checked ~ label:not(:nth-of-type(7)):not(:nth-of-type(16)),
+
+
+/* --------------------------------------------------- Patron para #GreenDay1 --------------------------------------------------- */
+
+
+#PinkFloyd1:checked ~ #PinkFloyd2:not(:checked) ~ #GreenDay1:checked ~ #GreenDay2:not(:checked) ~ label:not(:nth-of-type(1)):not(:nth-of-type(9)),
+#PinkFloyd1:not(:checked) ~ #PinkFloyd2:checked ~ #GreenDay1:checked ~ #GreenDay2:not(:checked) ~ label:not(:nth-of-type(2)):not(:nth-of-type(9)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ACDC1:checked ~ #ACDC2:not(:checked) ~ #GreenDay1:checked ~ #GreenDay2:not(:checked) ~ label:not(:nth-of-type(3)):not(:nth-of-type(9)),
+#ACDC1:not(:checked) ~ #ACDC2:checked ~ #GreenDay1:checked ~ #GreenDay2:not(:checked) ~ label:not(:nth-of-type(4)):not(:nth-of-type(9)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ArcticMonkeys1:checked ~ #ArcticMonkeys2:not(:checked) ~ #GreenDay1:checked ~ #GreenDay2:not(:checked) ~ label:not(:nth-of-type(5)):not(:nth-of-type(9)),
+#ArcticMonkeys1:not(:checked) ~ #ArcticMonkeys2:checked ~ #GreenDay1:checked ~ #GreenDay2:not(:checked) ~ label:not(:nth-of-type(6)):not(:nth-of-type(9)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#AeroSmith1:checked ~ #AeroSmith2:not(:checked) ~ #GreenDay1:checked ~ #GreenDay2:not(:checked) ~ label:not(:nth-of-type(7)):not(:nth-of-type(9)),
+#AeroSmith1:not(:checked) ~ #AeroSmith2:checked ~ #GreenDay1:checked ~ #GreenDay2:not(:checked) ~ label:not(:nth-of-type(8)):not(:nth-of-type(9)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#GreenDay1:checked ~ #GreenDay2:not(:checked) ~ #GunsNRoses1:checked ~ #GunsNRoses2:not(:checked) ~ label:not(:nth-of-type(9)):not(:nth-of-type(11)),
+#GreenDay1:checked ~ #GreenDay2:not(:checked) ~ #GunsNRoses1:not(:checked) ~ #GunsNRoses2:checked ~ label:not(:nth-of-type(9)):not(:nth-of-type(12)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#GreenDay1:checked ~ #GreenDay2:not(:checked) ~ #MotleyCrue1:checked ~ #MotleyCrue2:not(:checked) ~ label:not(:nth-of-type(9)):not(:nth-of-type(13)),
+#GreenDay1:checked ~ #GreenDay2:not(:checked) ~ #MotleyCrue1:not(:checked) ~ #MotleyCrue2:checked ~ label:not(:nth-of-type(9)):not(:nth-of-type(14)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#GreenDay1:checked ~ #GreenDay2:not(:checked) ~ #Nirvana1:checked ~ #Nirvana2:not(:checked) ~ label:not(:nth-of-type(9)):not(:nth-of-type(15)),
+#GreenDay1:checked ~ #GreenDay2:not(:checked) ~ #Nirvana1:not(:checked) ~ #Nirvana2:checked ~ label:not(:nth-of-type(9)):not(:nth-of-type(16)),
+
+
+/* --------------------------------------------------- Patron para #GreenDay2 --------------------------------------------------- */
+
+
+#PinkFloyd1:checked ~ #PinkFloyd2:not(:checked) ~ #GreenDay1:not(:checked) ~ #GreenDay2:checked ~ label:not(:nth-of-type(1)):not(:nth-of-type(10)),
+#PinkFloyd1:not(:checked) ~ #PinkFloyd2:checked ~ #GreenDay1:not(:checked) ~ #GreenDay2:checked ~ label:not(:nth-of-type(2)):not(:nth-of-type(10)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ACDC1:checked ~ #ACDC2:not(:checked) ~ #GreenDay1:not(:checked) ~ #GreenDay2:checked ~ label:not(:nth-of-type(3)):not(:nth-of-type(10)),
+#ACDC1:not(:checked) ~ #ACDC2:checked ~ #GreenDay1:not(:checked) ~ #GreenDay2:checked ~ label:not(:nth-of-type(4)):not(:nth-of-type(10)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ArcticMonkeys1:checked ~ #ArcticMonkeys2:not(:checked) ~ #GreenDay1:not(:checked) ~ #GreenDay2:checked ~ label:not(:nth-of-type(5)):not(:nth-of-type(10)),
+#ArcticMonkeys1:not(:checked) ~ #ArcticMonkeys2:checked ~ #GreenDay1:not(:checked) ~ #GreenDay2:checked ~ label:not(:nth-of-type(6)):not(:nth-of-type(10)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#AeroSmith1:checked ~ #AeroSmith2:not(:checked) ~ #GreenDay1:not(:checked) ~ #GreenDay2:checked ~ label:not(:nth-of-type(7)):not(:nth-of-type(10)),
+#AeroSmith1:not(:checked) ~ #AeroSmith2:checked ~ #GreenDay1:not(:checked) ~ #GreenDay2:checked ~ label:not(:nth-of-type(8)):not(:nth-of-type(10)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#GreenDay1:not(:checked) ~ #GreenDay2:checked ~ #GunsNRoses1:checked ~ #GunsNRoses2:not(:checked) ~ label:not(:nth-of-type(9)):not(:nth-of-type(11)),
+#GreenDay1:not(:checked) ~ #GreenDay2:checked ~ #GunsNRoses1:not(:checked) ~ #GunsNRoses2:checked ~ label:not(:nth-of-type(9)):not(:nth-of-type(12)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#GreenDay1:not(:checked) ~ #GreenDay2:checked ~ #MotleyCrue1:checked ~ #MotleyCrue2:not(:checked) ~ label:not(:nth-of-type(9)):not(:nth-of-type(13)),
+#GreenDay1:not(:checked) ~ #GreenDay2:checked ~ #MotleyCrue1:not(:checked) ~ #MotleyCrue2:checked ~ label:not(:nth-of-type(9)):not(:nth-of-type(14)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#GreenDay1:not(:checked) ~ #GreenDay2:checked ~ #Nirvana1:checked ~ #Nirvana2:not(:checked) ~ label:not(:nth-of-type(9)):not(:nth-of-type(15)),
+#GreenDay1:not(:checked) ~ #GreenDay2:checked ~ #Nirvana1:not(:checked) ~ #Nirvana2:checked ~ label:not(:nth-of-type(9)):not(:nth-of-type(16)),
+
+
+/* --------------------------------------------------- Patron para #GunsNRoses1 --------------------------------------------------- */
+
+
+#PinkFloyd1:checked ~ #PinkFloyd2:not(:checked) ~ #GunsNRoses1:checked ~ #GunsNRoses2:not(:checked) ~ label:not(:nth-of-type(1)):not(:nth-of-type(11)),
+#PinkFloyd1:not(:checked) ~ #PinkFloyd2:checked ~ #GunsNRoses1:checked ~ #GunsNRoses2:not(:checked) ~ label:not(:nth-of-type(2)):not(:nth-of-type(11)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ACDC1:checked ~ #ACDC2:not(:checked) ~ #GunsNRoses1:checked ~ #GunsNRoses2:not(:checked) ~ label:not(:nth-of-type(3)):not(:nth-of-type(11)),
+#ACDC1:not(:checked) ~ #ACDC2:checked ~ #GunsNRoses1:checked ~ #GunsNRoses2:not(:checked) ~ label:not(:nth-of-type(4)):not(:nth-of-type(11)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ArcticMonkeys1:checked ~ #ArcticMonkeys2:not(:checked) ~ #GunsNRoses1:checked ~ #GunsNRoses2:not(:checked) ~ label:not(:nth-of-type(5)):not(:nth-of-type(11)),
+#ArcticMonkeys1:not(:checked) ~ #ArcticMonkeys2:checked ~ #GunsNRoses1:checked ~ #GunsNRoses2:not(:checked) ~ label:not(:nth-of-type(6)):not(:nth-of-type(11)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#AeroSmith1:checked ~ #AeroSmith2:not(:checked) ~ #GunsNRoses1:checked ~ #GunsNRoses2:not(:checked) ~ label:not(:nth-of-type(7)):not(:nth-of-type(11)),
+#AeroSmith1:not(:checked) ~ #AeroSmith2:checked ~ #GunsNRoses1:checked ~ #GunsNRoses2:not(:checked) ~ label:not(:nth-of-type(8)):not(:nth-of-type(11)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#GreenDay1:checked ~ #GreenDay2:not(:checked) ~ #GunsNRoses1:checked ~ #GunsNRoses2:not(:checked) ~ label:not(:nth-of-type(9)):not(:nth-of-type(11)),
+#GreenDay1:not(:checked) ~ #GreenDay2:checked ~ #GunsNRoses1:checked ~ #GunsNRoses2:not(:checked) ~ label:not(:nth-of-type(10)):not(:nth-of-type(11)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#GunsNRoses1:checked ~ #GunsNRoses2:not(:checked) ~ #MotleyCrue1:checked ~ #MotleyCrue2:not(:checked) ~ label:not(:nth-of-type(11)):not(:nth-of-type(13)),
+#GunsNRoses1:checked ~ #GunsNRoses2:not(:checked) ~ #MotleyCrue1:not(:checked) ~ #MotleyCrue2:checked ~ label:not(:nth-of-type(11)):not(:nth-of-type(14)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#GunsNRoses1:checked ~ #GunsNRoses2:not(:checked) ~ #Nirvana1:checked ~ #Nirvana2:not(:checked) ~ label:not(:nth-of-type(11)):not(:nth-of-type(15)),
+#GunsNRoses1:checked ~ #GunsNRoses2:not(:checked) ~ #Nirvana1:not(:checked) ~ #Nirvana2:checked ~ label:not(:nth-of-type(11)):not(:nth-of-type(16)),
+
+
+/* --------------------------------------------------- Patron para #GunsNRoses2 --------------------------------------------------- */
+
+
+#PinkFloyd1:checked ~ #PinkFloyd2:not(:checked) ~ #GunsNRoses1:not(:checked) ~ #GunsNRoses2:checked ~ label:not(:nth-of-type(1)):not(:nth-of-type(12)),
+#PinkFloyd1:not(:checked) ~ #PinkFloyd2:checked ~ #GunsNRoses1:not(:checked) ~ #GunsNRoses2:checked ~ label:not(:nth-of-type(2)):not(:nth-of-type(12)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ACDC1:checked ~ #ACDC2:not(:checked) ~ #GunsNRoses1:not(:checked) ~ #GunsNRoses2:checked ~ label:not(:nth-of-type(3)):not(:nth-of-type(12)),
+#ACDC1:not(:checked) ~ #ACDC2:checked ~ #GunsNRoses1:not(:checked) ~ #GunsNRoses2:checked ~ label:not(:nth-of-type(4)):not(:nth-of-type(12)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ArcticMonkeys1:checked ~ #ArcticMonkeys2:not(:checked) ~ #GunsNRoses1:not(:checked) ~ #GunsNRoses2:checked ~ label:not(:nth-of-type(5)):not(:nth-of-type(12)),
+#ArcticMonkeys1:not(:checked) ~ #ArcticMonkeys2:checked ~ #GunsNRoses1:not(:checked) ~ #GunsNRoses2:checked ~ label:not(:nth-of-type(6)):not(:nth-of-type(12)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#AeroSmith1:checked ~ #AeroSmith2:not(:checked) ~ #GunsNRoses1:not(:checked) ~ #GunsNRoses2:checked ~ label:not(:nth-of-type(7)):not(:nth-of-type(12)),
+#AeroSmith1:not(:checked) ~ #AeroSmith2:checked ~ #GunsNRoses1:not(:checked) ~ #GunsNRoses2:checked ~ label:not(:nth-of-type(8)):not(:nth-of-type(12)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#GreenDay1:checked ~ #GreenDay2:not(:checked) ~ #GunsNRoses1:not(:checked) ~ #GunsNRoses2:checked ~ label:not(:nth-of-type(9)):not(:nth-of-type(12)),
+#GreenDay1:not(:checked) ~ #GreenDay2:checked ~ #GunsNRoses1:not(:checked) ~ #GunsNRoses2:checked ~ label:not(:nth-of-type(10)):not(:nth-of-type(12)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#GunsNRoses1:not(:checked) ~ #GunsNRoses2:checked ~ #MotleyCrue1:checked ~ #MotleyCrue2:not(:checked) ~ label:not(:nth-of-type(11)):not(:nth-of-type(13)),
+#GunsNRoses1:not(:checked) ~ #GunsNRoses2:checked ~ #MotleyCrue1:not(:checked) ~ #MotleyCrue2:checked ~ label:not(:nth-of-type(11)):not(:nth-of-type(14)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#GunsNRoses1:not(:checked) ~ #GunsNRoses2:checked ~ #Nirvana1:checked ~ #Nirvana2:not(:checked) ~ label:not(:nth-of-type(11)):not(:nth-of-type(15)),
+#GunsNRoses1:not(:checked) ~ #GunsNRoses2:checked ~ #Nirvana1:not(:checked) ~ #Nirvana2:checked ~ label:not(:nth-of-type(11)):not(:nth-of-type(16)),
+
+
+/* --------------------------------------------------- Patron para #MotleyCrue1 --------------------------------------------------- */
+
+
+#PinkFloyd1:checked ~ #PinkFloyd2:not(:checked) ~ #MotleyCrue1:checked ~ #MotleyCrue2:not(:checked) ~ label:not(:nth-of-type(1)):not(:nth-of-type(13)),
+#PinkFloyd1:not(:checked) ~ #PinkFloyd2:checked ~ #MotleyCrue1:checked ~ #MotleyCrue2:not(:checked) ~ label:not(:nth-of-type(2)):not(:nth-of-type(13)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ACDC1:checked ~ #ACDC2:not(:checked) ~ #MotleyCrue1:checked ~ #MotleyCrue2:not(:checked) ~ label:not(:nth-of-type(3)):not(:nth-of-type(13)),
+#ACDC1:not(:checked) ~ #ACDC2:checked ~ #MotleyCrue1:checked ~ #MotleyCrue2:not(:checked) ~ label:not(:nth-of-type(4)):not(:nth-of-type(13)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ArcticMonkeys1:checked ~ #ArcticMonkeys2:not(:checked) ~ #MotleyCrue1:checked ~ #MotleyCrue2:not(:checked) ~ label:not(:nth-of-type(5)):not(:nth-of-type(13)),
+#ArcticMonkeys1:not(:checked) ~ #ArcticMonkeys2:checked ~ #MotleyCrue1:checked ~ #MotleyCrue2:not(:checked) ~ label:not(:nth-of-type(6)):not(:nth-of-type(13)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#AeroSmith1:checked ~ #AeroSmith2:not(:checked) ~ #MotleyCrue1:checked ~ #MotleyCrue2:not(:checked) ~ label:not(:nth-of-type(7)):not(:nth-of-type(13)),
+#AeroSmith1:not(:checked) ~ #AeroSmith2:checked ~ #MotleyCrue1:checked ~ #MotleyCrue2:not(:checked) ~ label:not(:nth-of-type(8)):not(:nth-of-type(13)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#GreenDay1:checked ~ #GreenDay2:not(:checked) ~ #MotleyCrue1:checked ~ #MotleyCrue2:not(:checked) ~ label:not(:nth-of-type(9)):not(:nth-of-type(13)),
+#GreenDay1:not(:checked) ~ #GreenDay2:checked ~ #MotleyCrue1:checked ~ #MotleyCrue2:not(:checked) ~ label:not(:nth-of-type(10)):not(:nth-of-type(13)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#GunsNRoses1:checked ~ #GunsNRoses2:not(:checked) ~ #MotleyCrue1:checked ~ #MotleyCrue2:not(:checked) ~ label:not(:nth-of-type(11)):not(:nth-of-type(13)),
+#GunsNRoses1:not(:checked) ~ #GunsNRoses2:checked ~ #MotleyCrue1:checked ~ #MotleyCrue2:not(:checked) ~ label:not(:nth-of-type(12)):not(:nth-of-type(13)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#MotleyCrue1:checked ~ #MotleyCrue2:not(:checked) ~ #Nirvana1:checked ~ #Nirvana2:not(:checked) ~ label:not(:nth-of-type(13)):not(:nth-of-type(15)),
+#MotleyCrue1:checked ~ #MotleyCrue2:not(:checked) ~ #Nirvana1:not(:checked) ~ #Nirvana2:checked ~ label:not(:nth-of-type(13)):not(:nth-of-type(16)),
+
+
+/* --------------------------------------------------- Patron para #MotleyCrue2 --------------------------------------------------- */
+
+
+#PinkFloyd1:checked ~ #PinkFloyd2:not(:checked) ~ #MotleyCrue1:not(:checked) ~ #MotleyCrue2:checked ~ label:not(:nth-of-type(1)):not(:nth-of-type(14)),
+#PinkFloyd1:not(:checked) ~ #PinkFloyd2:checked ~ #MotleyCrue1:not(:checked) ~ #MotleyCrue2:checked ~ label:not(:nth-of-type(2)):not(:nth-of-type(14)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ACDC1:checked ~ #ACDC2:not(:checked) ~ #MotleyCrue1:not(:checked) ~ #MotleyCrue2:checked ~ label:not(:nth-of-type(3)):not(:nth-of-type(14)),
+#ACDC1:not(:checked) ~ #ACDC2:checked ~ #MotleyCrue1:not(:checked) ~ #MotleyCrue2:checked ~ label:not(:nth-of-type(4)):not(:nth-of-type(14)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ArcticMonkeys1:checked ~ #ArcticMonkeys2:not(:checked) ~ #MotleyCrue1:not(:checked) ~ #MotleyCrue2:checked ~ label:not(:nth-of-type(5)):not(:nth-of-type(14)),
+#ArcticMonkeys1:not(:checked) ~ #ArcticMonkeys2:checked ~ #MotleyCrue1:not(:checked) ~ #MotleyCrue2:checked ~ label:not(:nth-of-type(6)):not(:nth-of-type(14)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#AeroSmith1:checked ~ #AeroSmith2:not(:checked) ~ #MotleyCrue1:not(:checked) ~ #MotleyCrue2:checked ~ label:not(:nth-of-type(7)):not(:nth-of-type(14)),
+#AeroSmith1:not(:checked) ~ #AeroSmith2:checked ~ #MotleyCrue1:not(:checked) ~ #MotleyCrue2:checked ~ label:not(:nth-of-type(8)):not(:nth-of-type(14)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#GreenDay1:checked ~ #GreenDay2:not(:checked) ~ #MotleyCrue1:not(:checked) ~ #MotleyCrue2:checked ~ label:not(:nth-of-type(9)):not(:nth-of-type(14)),
+#GreenDay1:not(:checked) ~ #GreenDay2:checked ~ #MotleyCrue1:not(:checked) ~ #MotleyCrue2:checked ~ label:not(:nth-of-type(10)):not(:nth-of-type(14)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#GunsNRoses1:checked ~ #GunsNRoses2:not(:checked) ~ #MotleyCrue1:not(:checked) ~ #MotleyCrue2:checked ~ label:not(:nth-of-type(11)):not(:nth-of-type(14)),
+#GunsNRoses1:not(:checked) ~ #GunsNRoses2:checked ~ #MotleyCrue1:not(:checked) ~ #MotleyCrue2:checked ~ label:not(:nth-of-type(12)):not(:nth-of-type(14)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#MotleyCrue1:not(:checked) ~ #MotleyCrue2:checked ~ #Nirvana1:checked ~ #Nirvana2:not(:checked) ~ label:not(:nth-of-type(14)):not(:nth-of-type(15)),
+#MotleyCrue1:not(:checked) ~ #MotleyCrue2:checked ~ #Nirvana1:not(:checked) ~ #Nirvana2:checked ~ label:not(:nth-of-type(14)):not(:nth-of-type(16)),
+
+
+/* --------------------------------------------------- Patron para #Nirvana1 --------------------------------------------------- */
+
+
+#PinkFloyd1:checked ~ #PinkFloyd2:not(:checked) ~ #Nirvana1:checked ~ #Nirvana2:not(:checked) ~ label:not(:nth-of-type(1)):not(:nth-of-type(15)),
+#PinkFloyd1:not(:checked) ~ #PinkFloyd2:checked ~ #Nirvana1:checked ~ #Nirvana2:not(:checked) ~ label:not(:nth-of-type(2)):not(:nth-of-type(15)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ACDC1:checked ~ #ACDC2:not(:checked) ~ #Nirvana1:checked ~ #Nirvana2:not(:checked) ~ label:not(:nth-of-type(3)):not(:nth-of-type(15)),
+#ACDC1:not(:checked) ~ #ACDC2:checked ~ #Nirvana1:checked ~ #Nirvana2:not(:checked) ~ label:not(:nth-of-type(4)):not(:nth-of-type(15)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ArcticMonkeys1:checked ~ #ArcticMonkeys2:not(:checked) ~ #Nirvana1:checked ~ #Nirvana2:not(:checked) ~ label:not(:nth-of-type(5)):not(:nth-of-type(15)),
+#ArcticMonkeys1:not(:checked) ~ #ArcticMonkeys2:checked ~ #Nirvana1:checked ~ #Nirvana2:not(:checked) ~ label:not(:nth-of-type(6)):not(:nth-of-type(15)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#AeroSmith1:checked ~ #AeroSmith2:not(:checked) ~ #Nirvana1:checked ~ #Nirvana2:not(:checked) ~ label:not(:nth-of-type(7)):not(:nth-of-type(15)),
+#AeroSmith1:not(:checked) ~ #AeroSmith2:checked ~ #Nirvana1:checked ~ #Nirvana2:not(:checked) ~ label:not(:nth-of-type(8)):not(:nth-of-type(15)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#GreenDay1:checked ~ #GreenDay2:not(:checked) ~ #Nirvana1:checked ~ #Nirvana2:not(:checked) ~ label:not(:nth-of-type(9)):not(:nth-of-type(15)),
+#GreenDay1:not(:checked) ~ #GreenDay2:checked ~ #Nirvana1:checked ~ #Nirvana2:not(:checked) ~ label:not(:nth-of-type(10)):not(:nth-of-type(15)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#GunsNRoses1:checked ~ #GunsNRoses2:not(:checked) ~ #Nirvana1:checked ~ #Nirvana2:not(:checked) ~ label:not(:nth-of-type(11)):not(:nth-of-type(15)),
+#GunsNRoses1:not(:checked) ~ #GunsNRoses2:checked ~ #Nirvana1:checked ~ #Nirvana2:not(:checked) ~ label:not(:nth-of-type(12)):not(:nth-of-type(15)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#MotleyCrue1:checked ~ #MotleyCrue2:not(:checked) ~ #Nirvana1:checked ~ #Nirvana2:not(:checked) ~ label:not(:nth-of-type(13)):not(:nth-of-type(15)),
+#MotleyCrue1:not(:checked) ~ #MotleyCrue2:checked ~ #Nirvana1:checked ~ #Nirvana2:not(:checked) ~ label:not(:nth-of-type(14)):not(:nth-of-type(15)),
+
+
+/* --------------------------------------------------- Patron para #Nirvana2 --------------------------------------------------- */
+
+
+#PinkFloyd1:checked ~ #PinkFloyd2:not(:checked) ~ #Nirvana1:not(:checked) ~ #Nirvana2:checked ~ label:not(:nth-of-type(1)):not(:nth-of-type(16)),
+#PinkFloyd1:not(:checked) ~ #PinkFloyd2:checked ~ #Nirvana1:not(:checked) ~ #Nirvana2:checked ~ label:not(:nth-of-type(2)):not(:nth-of-type(16)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ACDC1:checked ~ #ACDC2:not(:checked) ~ #Nirvana1:not(:checked) ~ #Nirvana2:checked ~ label:not(:nth-of-type(3)):not(:nth-of-type(16)),
+#ACDC1:not(:checked) ~ #ACDC2:checked ~ #Nirvana1:not(:checked) ~ #Nirvana2:checked ~ label:not(:nth-of-type(4)):not(:nth-of-type(16)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ArcticMonkeys1:checked ~ #ArcticMonkeys2:not(:checked) ~ #Nirvana1:not(:checked) ~ #Nirvana2:checked ~ label:not(:nth-of-type(5)):not(:nth-of-type(16)),
+#ArcticMonkeys1:not(:checked) ~ #ArcticMonkeys2:checked ~ #Nirvana1:not(:checked) ~ #Nirvana2:checked ~ label:not(:nth-of-type(6)):not(:nth-of-type(16)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#AeroSmith1:checked ~ #AeroSmith2:not(:checked) ~ #Nirvana1:not(:checked) ~ #Nirvana2:checked ~ label:not(:nth-of-type(7)):not(:nth-of-type(16)),
+#AeroSmith1:not(:checked) ~ #AeroSmith2:checked ~ #Nirvana1:not(:checked) ~ #Nirvana2:checked ~ label:not(:nth-of-type(8)):not(:nth-of-type(16)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#GreenDay1:checked ~ #GreenDay2:not(:checked) ~ #Nirvana1:not(:checked) ~ #Nirvana2:checked ~ label:not(:nth-of-type(9)):not(:nth-of-type(16)),
+#GreenDay1:not(:checked) ~ #GreenDay2:checked ~ #Nirvana1:not(:checked) ~ #Nirvana2:checked ~ label:not(:nth-of-type(10)):not(:nth-of-type(16)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#GunsNRoses1:checked ~ #GunsNRoses2:not(:checked) ~ #Nirvana1:not(:checked) ~ #Nirvana2:checked ~ label:not(:nth-of-type(11)):not(:nth-of-type(16)),
+#GunsNRoses1:not(:checked) ~ #GunsNRoses2:checked ~ #Nirvana1:not(:checked) ~ #Nirvana2:checked ~ label:not(:nth-of-type(12)):not(:nth-of-type(16)),
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#MotleyCrue1:checked ~ #MotleyCrue2:not(:checked) ~ #Nirvana1:not(:checked) ~ #Nirvana2:checked ~ label:not(:nth-of-type(13)):not(:nth-of-type(16)),
+#MotleyCrue1:not(:checked) ~ #MotleyCrue2:checked ~ #Nirvana1:not(:checked) ~ #Nirvana2:checked ~ label:not(:nth-of-type(14)):not(:nth-of-type(16)) {
+  pointer-events: none;
+}
+
+
+/* -------------------------------- Mostrar mensaje para que el usuario gire las cartas diferentes -------------------------------- */
+/* --------------------------------------------------- Patron para #PinkFloyd1 --------------------------------------------------- */
+#PinkFloyd1:checked ~ #PinkFloyd2:not(:checked) ~ #ACDC1:checked ~ #ACDC2:not(:checked) ~ .VoltearCarta,
+#PinkFloyd1:checked ~ #PinkFloyd2:not(:checked) ~ #ACDC1:not(:checked) ~ #ACDC2:checked ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#PinkFloyd1:checked ~ #PinkFloyd2:not(:checked) ~ #ArcticMonkeys1:checked ~ #ArcticMonkeys2:not(:checked) ~ .VoltearCarta,
+#PinkFloyd1:checked ~ #PinkFloyd2:not(:checked) ~ #ArcticMonkeys1:not(:checked) ~ #ArcticMonkeys2:checked ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#PinkFloyd1:checked ~ #PinkFloyd2:not(:checked) ~ #AeroSmith1:checked ~ #AeroSmith2:not(:checked) ~ .VoltearCarta,
+#PinkFloyd1:checked ~ #PinkFloyd2:not(:checked) ~ #AeroSmith1:not(:checked) ~ #AeroSmith2:checked ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#PinkFloyd1:checked ~ #PinkFloyd2:not(:checked) ~ #GreenDay1:checked ~ #GreenDay2:not(:checked) ~ .VoltearCarta,
+#PinkFloyd1:checked ~ #PinkFloyd2:not(:checked) ~ #GreenDay1:not(:checked) ~ #GreenDay2:checked ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#PinkFloyd1:checked ~ #PinkFloyd2:not(:checked) ~ #GunsNRoses1:checked ~ #GunsNRoses2:not(:checked) ~ .VoltearCarta,
+#PinkFloyd1:checked ~ #PinkFloyd2:not(:checked) ~ #GunsNRoses1:not(:checked) ~ #GunsNRoses2:checked ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#PinkFloyd1:checked ~ #PinkFloyd2:not(:checked) ~ #MotleyCrue1:checked ~ #MotleyCrue2:not(:checked) ~ .VoltearCarta,
+#PinkFloyd1:checked ~ #PinkFloyd2:not(:checked) ~ #MotleyCrue1:not(:checked) ~ #MotleyCrue2:checked ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#PinkFloyd1:checked ~ #PinkFloyd2:not(:checked) ~ #Nirvana1:checked ~ #Nirvana2:not(:checked) ~ .VoltearCarta,
+#PinkFloyd1:checked ~ #PinkFloyd2:not(:checked) ~ #Nirvana1:not(:checked) ~ #Nirvana2:checked ~ .VoltearCarta,
+
+
+/* --------------------------------------------------- Patron para #PinkFloyd2 --------------------------------------------------- */
+
+
+#PinkFloyd1:not(:checked) ~ #PinkFloyd2:checked ~ #ACDC1:checked ~ #ACDC2:not(:checked) ~ .VoltearCarta,
+#PinkFloyd1:not(:checked) ~ #PinkFloyd2:checked ~ #ACDC1:not(:checked) ~ #ACDC2:checked ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#PinkFloyd1:not(:checked) ~ #PinkFloyd2:checked ~ #ArcticMonkeys1:checked ~ #ArcticMonkeys2:not(:checked) ~ .VoltearCarta,
+#PinkFloyd1:not(:checked) ~ #PinkFloyd2:checked ~ #ArcticMonkeys1:not(:checked) ~ #ArcticMonkeys2:checked ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#PinkFloyd1:not(:checked) ~ #PinkFloyd2:checked ~ #AeroSmith1:checked ~ #AeroSmith2:not(:checked) ~ .VoltearCarta,
+#PinkFloyd1:not(:checked) ~ #PinkFloyd2:checked ~ #AeroSmith1:not(:checked) ~ #AeroSmith2:checked ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#PinkFloyd1:not(:checked) ~ #PinkFloyd2:checked ~ #GreenDay1:checked ~ #GreenDay2:not(:checked) ~ .VoltearCarta,
+#PinkFloyd1:not(:checked) ~ #PinkFloyd2:checked ~ #GreenDay1:not(:checked) ~ #GreenDay2:checked ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#PinkFloyd1:not(:checked) ~ #PinkFloyd2:checked ~ #GunsNRoses1:checked ~ #GunsNRoses2:not(:checked) ~ .VoltearCarta,
+#PinkFloyd1:not(:checked) ~ #PinkFloyd2:checked ~ #GunsNRoses1:not(:checked) ~ #GunsNRoses2:checked ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#PinkFloyd1:not(:checked) ~ #PinkFloyd2:checked ~ #MotleyCrue1:checked ~ #MotleyCrue2:not(:checked) ~ .VoltearCarta,
+#PinkFloyd1:not(:checked) ~ #PinkFloyd2:checked ~ #MotleyCrue1:not(:checked) ~ #MotleyCrue2:checked ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#PinkFloyd1:not(:checked) ~ #PinkFloyd2:checked ~ #Nirvana1:checked ~ #Nirvana2:not(:checked) ~ .VoltearCarta,
+#PinkFloyd1:not(:checked) ~ #PinkFloyd2:checked ~ #Nirvana1:not(:checked) ~ #Nirvana2:checked ~ .VoltearCarta
+
+
+/* --------------------------------------------------- Patron para #ACDC1 --------------------------------------------------- */
+
+
+#PinkFloyd1:checked ~ #PinkFloyd2:not(:checked) ~ #ACDC1:checked ~ #ACDC2:not(:checked) ~ .VoltearCarta,
+#PinkFloyd1:not(:checked) ~ #PinkFloyd2:checked ~ #ACDC1:checked ~ #ACDC2:not(:checked) ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ACDC1:checked ~ #ACDC2:not(:checked) ~ #ArcticMonkeys1:checked ~ #ArcticMonkeys2:not(:checked) ~ .VoltearCarta,
+#ACDC1:checked ~ #ACDC2:not(:checked) ~ #ArcticMonkeys1:not(:checked) ~ #ArcticMonkeys2:checked ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ACDC1:checked ~ #ACDC2:not(:checked) ~ #AeroSmith1:checked ~ #AeroSmith2:not(:checked) ~ .VoltearCarta,
+#ACDC1:checked ~ #ACDC2:not(:checked) ~ #AeroSmith1:not(:checked) ~ #AeroSmith2:checked ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ACDC1:checked ~ #ACDC2:not(:checked) ~ #GreenDay1:checked ~ #GreenDay2:not(:checked) ~ .VoltearCarta,
+#ACDC1:checked ~ #ACDC2:not(:checked) ~ #GreenDay1:not(:checked) ~ #GreenDay2:checked ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ACDC1:checked ~ #ACDC2:not(:checked) ~ #GunsNRoses1:checked ~ #GunsNRoses2:not(:checked) ~ .VoltearCarta,
+#ACDC1:checked ~ #ACDC2:not(:checked) ~ #GunsNRoses1:not(:checked) ~ #GunsNRoses2:checked ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ACDC1:checked ~ #ACDC2:not(:checked) ~ #MotleyCrue1:checked ~ #MotleyCrue2:not(:checked) ~ .VoltearCarta,
+#ACDC1:checked ~ #ACDC2:not(:checked) ~ #MotleyCrue1:not(:checked) ~ #MotleyCrue2:checked ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ACDC1:checked ~ #ACDC2:not(:checked) ~ #Nirvana1:checked ~ #Nirvana2:not(:checked) ~ .VoltearCarta,
+#ACDC1:checked ~ #ACDC2:not(:checked) ~ #Nirvana1:not(:checked) ~ #Nirvana2:checked ~ .VoltearCarta,
+
+
+/* --------------------------------------------------- Patron para #ACDC2 --------------------------------------------------- */
+
+
+#PinkFloyd1:checked ~ #PinkFloyd2:not(:checked) ~ #ACDC1:not(:checked) ~ #ACDC2:checked ~ .VoltearCarta,
+#PinkFloyd1:not(:checked) ~ #PinkFloyd2:checked ~ #ACDC1:not(:checked) ~ #ACDC2:checked ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ACDC1:not(:checked) ~ #ACDC2:checked ~ #ArcticMonkeys1:checked ~ #ArcticMonkeys2:not(:checked) ~ .VoltearCarta,
+#ACDC1:not(:checked) ~ #ACDC2:checked ~ #ArcticMonkeys1:not(:checked) ~ #ArcticMonkeys2:checked ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ACDC1:not(:checked) ~ #ACDC2:checked ~ #AeroSmith1:checked ~ #AeroSmith2:not(:checked) ~ .VoltearCarta,
+#ACDC1:not(:checked) ~ #ACDC2:checked ~ #AeroSmith1:not(:checked) ~ #AeroSmith2:checked ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ACDC1:not(:checked) ~ #ACDC2:checked ~ #GreenDay1:checked ~ #GreenDay2:not(:checked) ~ .VoltearCarta,
+#ACDC1:not(:checked) ~ #ACDC2:checked ~ #GreenDay1:not(:checked) ~ #GreenDay2:checked ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ACDC1:not(:checked) ~ #ACDC2:checked ~ #GunsNRoses1:checked ~ #GunsNRoses2:not(:checked) ~ .VoltearCarta,
+#ACDC1:not(:checked) ~ #ACDC2:checked ~ #GunsNRoses1:not(:checked) ~ #GunsNRoses2:checked ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ACDC1:not(:checked) ~ #ACDC2:checked ~ #MotleyCrue1:checked ~ #MotleyCrue2:not(:checked) ~ .VoltearCarta,
+#ACDC1:not(:checked) ~ #ACDC2:checked ~ #MotleyCrue1:not(:checked) ~ #MotleyCrue2:checked ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ACDC1:not(:checked) ~ #ACDC2:checked ~ #Nirvana1:checked ~ #Nirvana2:not(:checked) ~ .VoltearCarta,
+#ACDC1:not(:checked) ~ #ACDC2:checked ~ #Nirvana1:not(:checked) ~ #Nirvana2:checked ~ .VoltearCarta,
+
+
+/* --------------------------------------------------- Patron para #ArcticMonkeys1 --------------------------------------------------- */
+
+
+#PinkFloyd1:checked ~ #PinkFloyd2:not(:checked) ~ #ArcticMonkeys1:checked ~ #ArcticMonkeys2:not(:checked) ~ .VoltearCarta,
+#PinkFloyd1:not(:checked) ~ #PinkFloyd2:checked ~ #ArcticMonkeys1:checked ~ #ArcticMonkeys2:not(:checked) ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ACDC1:checked ~ #ACDC2:not(:checked) ~ #ArcticMonkeys1:checked ~ #ArcticMonkeys2:not(:checked) ~ .VoltearCarta,
+#ACDC1:not(:checked) ~ #ACDC2:checked ~ #ArcticMonkeys1:checked ~ #ArcticMonkeys2:not(:checked) ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ArcticMonkeys1:checked ~ #ArcticMonkeys2:not(:checked) ~ #AeroSmith1:checked ~ #AeroSmith2:not(:checked) ~ .VoltearCarta,
+#ArcticMonkeys1:checked ~ #ArcticMonkeys2:not(:checked) ~ #AeroSmith1:not(:checked) ~ #AeroSmith2:checked ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ArcticMonkeys1:checked ~ #ArcticMonkeys2:not(:checked) ~ #GreenDay1:checked ~ #GreenDay2:not(:checked) ~ .VoltearCarta,
+#ArcticMonkeys1:checked ~ #ArcticMonkeys2:not(:checked) ~ #GreenDay1:not(:checked) ~ #GreenDay2:checked ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ArcticMonkeys1:checked ~ #ArcticMonkeys2:not(:checked) ~ #GunsNRoses1:checked ~ #GunsNRoses2:not(:checked) ~ .VoltearCarta,
+#ArcticMonkeys1:checked ~ #ArcticMonkeys2:not(:checked) ~ #GunsNRoses1:not(:checked) ~ #GunsNRoses2:checked ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ArcticMonkeys1:checked ~ #ArcticMonkeys2:not(:checked) ~ #MotleyCrue1:checked ~ #MotleyCrue2:not(:checked) ~ .VoltearCarta,
+#ArcticMonkeys1:checked ~ #ArcticMonkeys2:not(:checked) ~ #MotleyCrue1:not(:checked) ~ #MotleyCrue2:checked ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ArcticMonkeys1:checked ~ #ArcticMonkeys2:not(:checked) ~ #Nirvana1:checked ~ #Nirvana2:not(:checked) ~ .VoltearCarta,
+#ArcticMonkeys1:checked ~ #ArcticMonkeys2:not(:checked) ~ #Nirvana1:not(:checked) ~ #Nirvana2:checked ~ .VoltearCarta,
+
+
+/* --------------------------------------------------- Patron para #ArcticMonkeys2 --------------------------------------------------- */
+
+
+#PinkFloyd1:checked ~ #PinkFloyd2:not(:checked) ~ #ArcticMonkeys1:not(:checked) ~ #ArcticMonkeys2:checked ~ .VoltearCarta,
+#PinkFloyd1:not(:checked) ~ #PinkFloyd2:checked ~ #ArcticMonkeys1:not(:checked) ~ #ArcticMonkeys2:checked ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ACDC1:checked ~ #ACDC2:not(:checked) ~ #ArcticMonkeys1:not(:checked) ~ #ArcticMonkeys2:checked ~ .VoltearCarta,
+#ACDC1:not(:checked) ~ #ACDC2:checked ~ #ArcticMonkeys1:not(:checked) ~ #ArcticMonkeys2:checked ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ArcticMonkeys1:not(:checked) ~ #ArcticMonkeys2:checked ~ #AeroSmith1:checked ~ #AeroSmith2:not(:checked) ~ .VoltearCarta,
+#ArcticMonkeys1:not(:checked) ~ #ArcticMonkeys2:checked ~ #AeroSmith1:not(:checked) ~ #AeroSmith2:checked ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ArcticMonkeys1:not(:checked) ~ #ArcticMonkeys2:checked ~ #GreenDay1:checked ~ #GreenDay2:not(:checked) ~ .VoltearCarta,
+#ArcticMonkeys1:not(:checked) ~ #ArcticMonkeys2:checked ~ #GreenDay1:not(:checked) ~ #GreenDay2:checked ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ArcticMonkeys1:not(:checked) ~ #ArcticMonkeys2:checked ~ #GunsNRoses1:checked ~ #GunsNRoses2:not(:checked) ~ .VoltearCarta,
+#ArcticMonkeys1:not(:checked) ~ #ArcticMonkeys2:checked ~ #GunsNRoses1:not(:checked) ~ #GunsNRoses2:checked ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ArcticMonkeys1:not(:checked) ~ #ArcticMonkeys2:checked ~ #MotleyCrue1:checked ~ #MotleyCrue2:not(:checked) ~ .VoltearCarta,
+#ArcticMonkeys1:not(:checked) ~ #ArcticMonkeys2:checked ~ #MotleyCrue1:not(:checked) ~ #MotleyCrue2:checked ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ArcticMonkeys1:not(:checked) ~ #ArcticMonkeys2:checked ~ #Nirvana1:checked ~ #Nirvana2:not(:checked) ~ .VoltearCarta,
+#ArcticMonkeys1:not(:checked) ~ #ArcticMonkeys2:checked ~ #Nirvana1:not(:checked) ~ #Nirvana2:checked ~ .VoltearCarta,
+
+
+/* --------------------------------------------------- Patron para #AeroSmith1 --------------------------------------------------- */
+
+
+#PinkFloyd1:checked ~ #PinkFloyd2:not(:checked) ~ #AeroSmith1:checked ~ #AeroSmith2:not(:checked) ~ .VoltearCarta,
+#PinkFloyd1:not(:checked) ~ #PinkFloyd2:checked ~ #AeroSmith1:checked ~ #AeroSmith2:not(:checked) ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ACDC1:checked ~ #ACDC2:not(:checked) ~ #AeroSmith1:checked ~ #AeroSmith2:not(:checked) ~ .VoltearCarta,
+#ACDC1:not(:checked) ~ #ACDC2:checked ~ #AeroSmith1:checked ~ #AeroSmith2:not(:checked) ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ArcticMonkeys1:checked ~ #ArcticMonkeys2:not(:checked) ~ #AeroSmith1:checked ~ #AeroSmith2:not(:checked) ~ .VoltearCarta,
+#ArcticMonkeys1:not(:checked) ~ #ArcticMonkeys2:checked ~ #AeroSmith1:checked ~ #AeroSmith2:not(:checked) ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#AeroSmith1:checked ~ #AeroSmith2:not(:checked) ~ #GreenDay1:checked ~ #GreenDay2:not(:checked) ~ .VoltearCarta,
+#AeroSmith1:checked ~ #AeroSmith2:not(:checked) ~ #GreenDay1:not(:checked) ~ #GreenDay2:checked ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#AeroSmith1:checked ~ #AeroSmith2:not(:checked) ~ #GunsNRoses1:checked ~ #GunsNRoses2:not(:checked) ~ .VoltearCarta,
+#AeroSmith1:checked ~ #AeroSmith2:not(:checked) ~ #GunsNRoses1:not(:checked) ~ #GunsNRoses2:checked ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#AeroSmith1:checked ~ #AeroSmith2:not(:checked) ~ #MotleyCrue1:checked ~ #MotleyCrue2:not(:checked) ~ .VoltearCarta,
+#AeroSmith1:checked ~ #AeroSmith2:not(:checked) ~ #MotleyCrue1:not(:checked) ~ #MotleyCrue2:checked ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#AeroSmith1:checked ~ #AeroSmith2:not(:checked) ~ #Nirvana1:checked ~ #Nirvana2:not(:checked) ~ .VoltearCarta,
+#AeroSmith1:checked ~ #AeroSmith2:not(:checked) ~ #Nirvana1:not(:checked) ~ #Nirvana2:checked ~ .VoltearCarta,
+
+
+/* --------------------------------------------------- Patron para #AeroSmith2 --------------------------------------------------- */
+
+
+#PinkFloyd1:checked ~ #PinkFloyd2:not(:checked) ~ #AeroSmith1:not(:checked) ~ #AeroSmith2:checked ~ .VoltearCarta,
+#PinkFloyd1:not(:checked) ~ #PinkFloyd2:checked ~ #AeroSmith1:not(:checked) ~ #AeroSmith2:checked ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ACDC1:checked ~ #ACDC2:not(:checked) ~ #AeroSmith1:not(:checked) ~ #AeroSmith2:checked ~ .VoltearCarta,
+#ACDC1:not(:checked) ~ #ACDC2:checked ~ #AeroSmith1:not(:checked) ~ #AeroSmith2:checked ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ArcticMonkeys1:checked ~ #ArcticMonkeys2:not(:checked) ~ #AeroSmith1:not(:checked) ~ #AeroSmith2:checked ~ .VoltearCarta,
+#ArcticMonkeys1:not(:checked) ~ #ArcticMonkeys2:checked ~ #AeroSmith1:not(:checked) ~ #AeroSmith2:checked ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#AeroSmith1:not(:checked) ~ #AeroSmith2:checked ~ #GreenDay1:checked ~ #GreenDay2:not(:checked) ~ .VoltearCarta,
+#AeroSmith1:not(:checked) ~ #AeroSmith2:checked ~ #GreenDay1:not(:checked) ~ #GreenDay2:checked ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#AeroSmith1:not(:checked) ~ #AeroSmith2:checked ~ #GunsNRoses1:checked ~ #GunsNRoses2:not(:checked) ~ .VoltearCarta,
+#AeroSmith1:not(:checked) ~ #AeroSmith2:checked ~ #GunsNRoses1:not(:checked) ~ #GunsNRoses2:checked ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#AeroSmith1:not(:checked) ~ #AeroSmith2:checked ~ #MotleyCrue1:checked ~ #MotleyCrue2:not(:checked) ~ .VoltearCarta,
+#AeroSmith1:not(:checked) ~ #AeroSmith2:checked ~ #MotleyCrue1:not(:checked) ~ #MotleyCrue2:checked ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#AeroSmith1:not(:checked) ~ #AeroSmith2:checked ~ #Nirvana1:checked ~ #Nirvana2:not(:checked) ~ .VoltearCarta,
+#AeroSmith1:not(:checked) ~ #AeroSmith2:checked ~ #Nirvana1:not(:checked) ~ #Nirvana2:checked ~ .VoltearCarta,
+
+
+/* --------------------------------------------------- Patron para #GreenDay1 --------------------------------------------------- */
+
+
+#PinkFloyd1:checked ~ #PinkFloyd2:not(:checked) ~ #GreenDay1:checked ~ #GreenDay2:not(:checked) ~ .VoltearCarta,
+#PinkFloyd1:not(:checked) ~ #PinkFloyd2:checked ~ #GreenDay1:checked ~ #GreenDay2:not(:checked) ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ACDC1:checked ~ #ACDC2:not(:checked) ~ #GreenDay1:checked ~ #GreenDay2:not(:checked) ~ .VoltearCarta,
+#ACDC1:not(:checked) ~ #ACDC2:checked ~ #GreenDay1:checked ~ #GreenDay2:not(:checked) ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ArcticMonkeys1:checked ~ #ArcticMonkeys2:not(:checked) ~ #GreenDay1:checked ~ #GreenDay2:not(:checked) ~ .VoltearCarta,
+#ArcticMonkeys1:not(:checked) ~ #ArcticMonkeys2:checked ~ #GreenDay1:checked ~ #GreenDay2:not(:checked) ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#AeroSmith1:checked ~ #AeroSmith2:not(:checked) ~ #GreenDay1:checked ~ #GreenDay2:not(:checked) ~ .VoltearCarta,
+#AeroSmith1:not(:checked) ~ #AeroSmith2:checked ~ #GreenDay1:checked ~ #GreenDay2:not(:checked) ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#GreenDay1:checked ~ #GreenDay2:not(:checked) ~ #GunsNRoses1:checked ~ #GunsNRoses2:not(:checked) ~ .VoltearCarta,
+#GreenDay1:checked ~ #GreenDay2:not(:checked) ~ #GunsNRoses1:not(:checked) ~ #GunsNRoses2:checked ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#GreenDay1:checked ~ #GreenDay2:not(:checked) ~ #MotleyCrue1:checked ~ #MotleyCrue2:not(:checked) ~ .VoltearCarta,
+#GreenDay1:checked ~ #GreenDay2:not(:checked) ~ #MotleyCrue1:not(:checked) ~ #MotleyCrue2:checked ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#GreenDay1:checked ~ #GreenDay2:not(:checked) ~ #Nirvana1:checked ~ #Nirvana2:not(:checked) ~ .VoltearCarta,
+#GreenDay1:checked ~ #GreenDay2:not(:checked) ~ #Nirvana1:not(:checked) ~ #Nirvana2:checked ~ .VoltearCarta,
+
+
+/* --------------------------------------------------- Patron para #GreenDay2 --------------------------------------------------- */
+
+
+#PinkFloyd1:checked ~ #PinkFloyd2:not(:checked) ~ #GreenDay1:not(:checked) ~ #GreenDay2:checked ~ .VoltearCarta,
+#PinkFloyd1:not(:checked) ~ #PinkFloyd2:checked ~ #GreenDay1:not(:checked) ~ #GreenDay2:checked ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ACDC1:checked ~ #ACDC2:not(:checked) ~ #GreenDay1:not(:checked) ~ #GreenDay2:checked ~ .VoltearCarta,
+#ACDC1:not(:checked) ~ #ACDC2:checked ~ #GreenDay1:not(:checked) ~ #GreenDay2:checked ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ArcticMonkeys1:checked ~ #ArcticMonkeys2:not(:checked) ~ #GreenDay1:not(:checked) ~ #GreenDay2:checked ~ .VoltearCarta,
+#ArcticMonkeys1:not(:checked) ~ #ArcticMonkeys2:checked ~ #GreenDay1:not(:checked) ~ #GreenDay2:checked ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#AeroSmith1:checked ~ #AeroSmith2:not(:checked) ~ #GreenDay1:not(:checked) ~ #GreenDay2:checked ~ .VoltearCarta,
+#AeroSmith1:not(:checked) ~ #AeroSmith2:checked ~ #GreenDay1:not(:checked) ~ #GreenDay2:checked ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#GreenDay1:not(:checked) ~ #GreenDay2:checked ~ #GunsNRoses1:checked ~ #GunsNRoses2:not(:checked) ~ .VoltearCarta,
+#GreenDay1:not(:checked) ~ #GreenDay2:checked ~ #GunsNRoses1:not(:checked) ~ #GunsNRoses2:checked ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#GreenDay1:not(:checked) ~ #GreenDay2:checked ~ #MotleyCrue1:checked ~ #MotleyCrue2:not(:checked) ~ .VoltearCarta,
+#GreenDay1:not(:checked) ~ #GreenDay2:checked ~ #MotleyCrue1:not(:checked) ~ #MotleyCrue2:checked ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#GreenDay1:not(:checked) ~ #GreenDay2:checked ~ #Nirvana1:checked ~ #Nirvana2:not(:checked) ~ .VoltearCarta,
+#GreenDay1:not(:checked) ~ #GreenDay2:checked ~ #Nirvana1:not(:checked) ~ #Nirvana2:checked ~ .VoltearCarta,
+
+
+/* --------------------------------------------------- Patron para #GunsNRoses1 --------------------------------------------------- */
+
+
+#PinkFloyd1:checked ~ #PinkFloyd2:not(:checked) ~ #GunsNRoses1:checked ~ #GunsNRoses2:not(:checked) ~ .VoltearCarta,
+#PinkFloyd1:not(:checked) ~ #PinkFloyd2:checked ~ #GunsNRoses1:checked ~ #GunsNRoses2:not(:checked) ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ACDC1:checked ~ #ACDC2:not(:checked) ~ #GunsNRoses1:checked ~ #GunsNRoses2:not(:checked) ~ .VoltearCarta,
+#ACDC1:not(:checked) ~ #ACDC2:checked ~ #GunsNRoses1:checked ~ #GunsNRoses2:not(:checked) ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ArcticMonkeys1:checked ~ #ArcticMonkeys2:not(:checked) ~ #GunsNRoses1:checked ~ #GunsNRoses2:not(:checked) ~ .VoltearCarta,
+#ArcticMonkeys1:not(:checked) ~ #ArcticMonkeys2:checked ~ #GunsNRoses1:checked ~ #GunsNRoses2:not(:checked) ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#AeroSmith1:checked ~ #AeroSmith2:not(:checked) ~ #GunsNRoses1:checked ~ #GunsNRoses2:not(:checked) ~ .VoltearCarta,
+#AeroSmith1:not(:checked) ~ #AeroSmith2:checked ~ #GunsNRoses1:checked ~ #GunsNRoses2:not(:checked) ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#GreenDay1:checked ~ #GreenDay2:not(:checked) ~ #GunsNRoses1:checked ~ #GunsNRoses2:not(:checked) ~ .VoltearCarta,
+#GreenDay1:not(:checked) ~ #GreenDay2:checked ~ #GunsNRoses1:checked ~ #GunsNRoses2:not(:checked) ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#GunsNRoses1:checked ~ #GunsNRoses2:not(:checked) ~ #MotleyCrue1:checked ~ #MotleyCrue2:not(:checked) ~ .VoltearCarta,
+#GunsNRoses1:checked ~ #GunsNRoses2:not(:checked) ~ #MotleyCrue1:not(:checked) ~ #MotleyCrue2:checked ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#GunsNRoses1:checked ~ #GunsNRoses2:not(:checked) ~ #Nirvana1:checked ~ #Nirvana2:not(:checked) ~ .VoltearCarta,
+#GunsNRoses1:checked ~ #GunsNRoses2:not(:checked) ~ #Nirvana1:not(:checked) ~ #Nirvana2:checked ~ .VoltearCarta,
+
+
+/* --------------------------------------------------- Patron para #GunsNRoses2 --------------------------------------------------- */
+
+
+#PinkFloyd1:checked ~ #PinkFloyd2:not(:checked) ~ #GunsNRoses1:not(:checked) ~ #GunsNRoses2:checked ~ .VoltearCarta,
+#PinkFloyd1:not(:checked) ~ #PinkFloyd2:checked ~ #GunsNRoses1:not(:checked) ~ #GunsNRoses2:checked ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ACDC1:checked ~ #ACDC2:not(:checked) ~ #GunsNRoses1:not(:checked) ~ #GunsNRoses2:checked ~ .VoltearCarta,
+#ACDC1:not(:checked) ~ #ACDC2:checked ~ #GunsNRoses1:not(:checked) ~ #GunsNRoses2:checked ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ArcticMonkeys1:checked ~ #ArcticMonkeys2:not(:checked) ~ #GunsNRoses1:not(:checked) ~ #GunsNRoses2:checked ~ .VoltearCarta,
+#ArcticMonkeys1:not(:checked) ~ #ArcticMonkeys2:checked ~ #GunsNRoses1:not(:checked) ~ #GunsNRoses2:checked ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#AeroSmith1:checked ~ #AeroSmith2:not(:checked) ~ #GunsNRoses1:not(:checked) ~ #GunsNRoses2:checked ~ .VoltearCarta,
+#AeroSmith1:not(:checked) ~ #AeroSmith2:checked ~ #GunsNRoses1:not(:checked) ~ #GunsNRoses2:checked ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#GreenDay1:checked ~ #GreenDay2:not(:checked) ~ #GunsNRoses1:not(:checked) ~ #GunsNRoses2:checked ~ .VoltearCarta,
+#GreenDay1:not(:checked) ~ #GreenDay2:checked ~ #GunsNRoses1:not(:checked) ~ #GunsNRoses2:checked ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#GunsNRoses1:not(:checked) ~ #GunsNRoses2:checked ~ #MotleyCrue1:checked ~ #MotleyCrue2:not(:checked) ~ .VoltearCarta,
+#GunsNRoses1:not(:checked) ~ #GunsNRoses2:checked ~ #MotleyCrue1:not(:checked) ~ #MotleyCrue2:checked ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#GunsNRoses1:not(:checked) ~ #GunsNRoses2:checked ~ #Nirvana1:checked ~ #Nirvana2:not(:checked) ~ .VoltearCarta,
+#GunsNRoses1:not(:checked) ~ #GunsNRoses2:checked ~ #Nirvana1:not(:checked) ~ #Nirvana2:checked ~ .VoltearCarta,
+
+
+/* --------------------------------------------------- Patron para #MotleyCrue1 --------------------------------------------------- */
+
+
+#PinkFloyd1:checked ~ #PinkFloyd2:not(:checked) ~ #MotleyCrue1:checked ~ #MotleyCrue2:not(:checked) ~ .VoltearCarta,
+#PinkFloyd1:not(:checked) ~ #PinkFloyd2:checked ~ #MotleyCrue1:checked ~ #MotleyCrue2:not(:checked) ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ACDC1:checked ~ #ACDC2:not(:checked) ~ #MotleyCrue1:checked ~ #MotleyCrue2:not(:checked) ~ .VoltearCarta,
+#ACDC1:not(:checked) ~ #ACDC2:checked ~ #MotleyCrue1:checked ~ #MotleyCrue2:not(:checked) ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ArcticMonkeys1:checked ~ #ArcticMonkeys2:not(:checked) ~ #MotleyCrue1:checked ~ #MotleyCrue2:not(:checked) ~ .VoltearCarta,
+#ArcticMonkeys1:not(:checked) ~ #ArcticMonkeys2:checked ~ #MotleyCrue1:checked ~ #MotleyCrue2:not(:checked) ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#AeroSmith1:checked ~ #AeroSmith2:not(:checked) ~ #MotleyCrue1:checked ~ #MotleyCrue2:not(:checked) ~ .VoltearCarta,
+#AeroSmith1:not(:checked) ~ #AeroSmith2:checked ~ #MotleyCrue1:checked ~ #MotleyCrue2:not(:checked) ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#GreenDay1:checked ~ #GreenDay2:not(:checked) ~ #MotleyCrue1:checked ~ #MotleyCrue2:not(:checked) ~ .VoltearCarta,
+#GreenDay1:not(:checked) ~ #GreenDay2:checked ~ #MotleyCrue1:checked ~ #MotleyCrue2:not(:checked) ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#GunsNRoses1:checked ~ #GunsNRoses2:not(:checked) ~ #MotleyCrue1:checked ~ #MotleyCrue2:not(:checked) ~ .VoltearCarta,
+#GunsNRoses1:not(:checked) ~ #GunsNRoses2:checked ~ #MotleyCrue1:checked ~ #MotleyCrue2:not(:checked) ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#MotleyCrue1:checked ~ #MotleyCrue2:not(:checked) ~ #Nirvana1:checked ~ #Nirvana2:not(:checked) ~ .VoltearCarta,
+#MotleyCrue1:checked ~ #MotleyCrue2:not(:checked) ~ #Nirvana1:not(:checked) ~ #Nirvana2:checked ~ .VoltearCarta,
+
+
+/* --------------------------------------------------- Patron para #MotleyCrue2 --------------------------------------------------- */
+
+
+#PinkFloyd1:checked ~ #PinkFloyd2:not(:checked) ~ #MotleyCrue1:not(:checked) ~ #MotleyCrue2:checked ~ .VoltearCarta,
+#PinkFloyd1:not(:checked) ~ #PinkFloyd2:checked ~ #MotleyCrue1:not(:checked) ~ #MotleyCrue2:checked ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ACDC1:checked ~ #ACDC2:not(:checked) ~ #MotleyCrue1:not(:checked) ~ #MotleyCrue2:checked ~ .VoltearCarta,
+#ACDC1:not(:checked) ~ #ACDC2:checked ~ #MotleyCrue1:not(:checked) ~ #MotleyCrue2:checked ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ArcticMonkeys1:checked ~ #ArcticMonkeys2:not(:checked) ~ #MotleyCrue1:not(:checked) ~ #MotleyCrue2:checked ~ .VoltearCarta,
+#ArcticMonkeys1:not(:checked) ~ #ArcticMonkeys2:checked ~ #MotleyCrue1:not(:checked) ~ #MotleyCrue2:checked ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#AeroSmith1:checked ~ #AeroSmith2:not(:checked) ~ #MotleyCrue1:not(:checked) ~ #MotleyCrue2:checked ~ .VoltearCarta,
+#AeroSmith1:not(:checked) ~ #AeroSmith2:checked ~ #MotleyCrue1:not(:checked) ~ #MotleyCrue2:checked ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#GreenDay1:checked ~ #GreenDay2:not(:checked) ~ #MotleyCrue1:not(:checked) ~ #MotleyCrue2:checked ~ .VoltearCarta,
+#GreenDay1:not(:checked) ~ #GreenDay2:checked ~ #MotleyCrue1:not(:checked) ~ #MotleyCrue2:checked ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#GunsNRoses1:checked ~ #GunsNRoses2:not(:checked) ~ #MotleyCrue1:not(:checked) ~ #MotleyCrue2:checked ~ .VoltearCarta,
+#GunsNRoses1:not(:checked) ~ #GunsNRoses2:checked ~ #MotleyCrue1:not(:checked) ~ #MotleyCrue2:checked ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#MotleyCrue1:not(:checked) ~ #MotleyCrue2:checked ~ #Nirvana1:checked ~ #Nirvana2:not(:checked) ~ .VoltearCarta,
+#MotleyCrue1:not(:checked) ~ #MotleyCrue2:checked ~ #Nirvana1:not(:checked) ~ #Nirvana2:checked ~ .VoltearCarta,
+
+
+/* --------------------------------------------------- Patron para #Nirvana1 --------------------------------------------------- */
+
+
+#PinkFloyd1:checked ~ #PinkFloyd2:not(:checked) ~ #Nirvana1:checked ~ #Nirvana2:not(:checked) ~ .VoltearCarta,
+#PinkFloyd1:not(:checked) ~ #PinkFloyd2:checked ~ #Nirvana1:checked ~ #Nirvana2:not(:checked) ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ACDC1:checked ~ #ACDC2:not(:checked) ~ #Nirvana1:checked ~ #Nirvana2:not(:checked) ~ .VoltearCarta,
+#ACDC1:not(:checked) ~ #ACDC2:checked ~ #Nirvana1:checked ~ #Nirvana2:not(:checked) ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ArcticMonkeys1:checked ~ #ArcticMonkeys2:not(:checked) ~ #Nirvana1:checked ~ #Nirvana2:not(:checked) ~ .VoltearCarta,
+#ArcticMonkeys1:not(:checked) ~ #ArcticMonkeys2:checked ~ #Nirvana1:checked ~ #Nirvana2:not(:checked) ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#AeroSmith1:checked ~ #AeroSmith2:not(:checked) ~ #Nirvana1:checked ~ #Nirvana2:not(:checked) ~ .VoltearCarta,
+#AeroSmith1:not(:checked) ~ #AeroSmith2:checked ~ #Nirvana1:checked ~ #Nirvana2:not(:checked) ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#GreenDay1:checked ~ #GreenDay2:not(:checked) ~ #Nirvana1:checked ~ #Nirvana2:not(:checked) ~ .VoltearCarta,
+#GreenDay1:not(:checked) ~ #GreenDay2:checked ~ #Nirvana1:checked ~ #Nirvana2:not(:checked) ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#GunsNRoses1:checked ~ #GunsNRoses2:not(:checked) ~ #Nirvana1:checked ~ #Nirvana2:not(:checked) ~ .VoltearCarta,
+#GunsNRoses1:not(:checked) ~ #GunsNRoses2:checked ~ #Nirvana1:checked ~ #Nirvana2:not(:checked) ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#MotleyCrue1:checked ~ #MotleyCrue2:not(:checked) ~ #Nirvana1:checked ~ #Nirvana2:not(:checked) ~ .VoltearCarta,
+#MotleyCrue1:not(:checked) ~ #MotleyCrue2:checked ~ #Nirvana1:checked ~ #Nirvana2:not(:checked) ~ .VoltearCarta,
+
+
+/* --------------------------------------------------- Patron para #Nirvana2 --------------------------------------------------- */
+
+
+#PinkFloyd1:checked ~ #PinkFloyd2:not(:checked) ~ #Nirvana1:not(:checked) ~ #Nirvana2:checked ~ .VoltearCarta,
+#PinkFloyd1:not(:checked) ~ #PinkFloyd2:checked ~ #Nirvana1:not(:checked) ~ #Nirvana2:checked ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ACDC1:checked ~ #ACDC2:not(:checked) ~ #Nirvana1:not(:checked) ~ #Nirvana2:checked ~ .VoltearCarta,
+#ACDC1:not(:checked) ~ #ACDC2:checked ~ #Nirvana1:not(:checked) ~ #Nirvana2:checked ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#ArcticMonkeys1:checked ~ #ArcticMonkeys2:not(:checked) ~ #Nirvana1:not(:checked) ~ #Nirvana2:checked ~ .VoltearCarta,
+#ArcticMonkeys1:not(:checked) ~ #ArcticMonkeys2:checked ~ #Nirvana1:not(:checked) ~ #Nirvana2:checked ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#AeroSmith1:checked ~ #AeroSmith2:not(:checked) ~ #Nirvana1:not(:checked) ~ #Nirvana2:checked ~ .VoltearCarta,
+#AeroSmith1:not(:checked) ~ #AeroSmith2:checked ~ #Nirvana1:not(:checked) ~ #Nirvana2:checked ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#GreenDay1:checked ~ #GreenDay2:not(:checked) ~ #Nirvana1:not(:checked) ~ #Nirvana2:checked ~ .VoltearCarta,
+#GreenDay1:not(:checked) ~ #GreenDay2:checked ~ #Nirvana1:not(:checked) ~ #Nirvana2:checked ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#GunsNRoses1:checked ~ #GunsNRoses2:not(:checked) ~ #Nirvana1:not(:checked) ~ #Nirvana2:checked ~ .VoltearCarta,
+#GunsNRoses1:not(:checked) ~ #GunsNRoses2:checked ~ #Nirvana1:not(:checked) ~ #Nirvana2:checked ~ .VoltearCarta,
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+#MotleyCrue1:checked ~ #MotleyCrue2:not(:checked) ~ #Nirvana1:not(:checked) ~ #Nirvana2:checked ~ .VoltearCarta,
+#MotleyCrue1:not(:checked) ~ #MotleyCrue2:checked ~ #Nirvana1:not(:checked) ~ #Nirvana2:checked ~ .VoltearCarta
+{
+  animation: show 0.6s ease-in-out forwards;
+  pointer-events: none;
+}
+  
+  /* Cuando todas las cartas estan chequeadas display a .MensajeGanaste flex */
+  #PinkFloyd1:checked
+    ~ #PinkFloyd2:checked
+    ~ #ACDC1:checked
+    ~ #ACDC2:checked
+    ~ #ArcticMonkeys1:checked
+    ~ #ArcticMonkeys2:checked
+    ~ #AeroSmith1:checked
+    ~ #AeroSmith2:checked
+    ~ #GreenDay1:checked
+    ~ #GreenDay2:checked
+    ~ #GunsNRoses1:checked
+    ~ #GunsNRoses2:checked
+    ~ #MotleyCrue1:checked
+    ~ #MotleyCrue2:checked
+    ~ #Nirvana1:checked
+    ~ #Nirvana2:checked
+    ~ .MensajeGanaste {
+    display: flex;
+  }
+  
+  /* tapar GenerarAzar cuando clickeado */
+  #D1:checked ~ .GenerarAzar,
+  #D2:checked ~ .GenerarAzar,
+  #D3:checked ~ .GenerarAzar,
+  #D4:checked ~ .GenerarAzar,
+  #D5:checked ~ .GenerarAzar,
+  #D6:checked ~ .GenerarAzar {
+    display: none;
+  }
+  
+  /* Mostrar main cuando clickeado */
+  #D1:checked ~ main,
+  #D2:checked ~ main,
+  #D3:checked ~ main,
+  #D4:checked ~ main,
+  #D5:checked ~ main,
+  #D6:checked ~ main {
+    display: grid;
+  }
+  
+  /* Ocultar inputs para que no se vean los checkbox */
+  input[type="checkbox"],
+  input[type="radio"] {
+    display: none;
+  }
+
+  @keyframes show {
+    50% {
+      opacity: 0;
+      transform: scale(0);
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 4;
+      transform: scale(1);
+      transform: translateY(0);
+    }
+  }
+  
+  
+    
+  .GenerarAzar {
+    /*Quiero hacer que este elemento 
+    haga que los que están detras de él se vean desenfocados*/
+    animation: changeOrder 6s infinite linear;
+    position: fixed;
+    cursor: default;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    user-select: none;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    color: white;
+  }
+  
+  
+  .Iniciar {
+    display: flex;
+    cursor: default;
+    user-select: none;
+    background: linear-gradient(-20deg, #eab3a0b9 20%, #a76f6fbd 60%);
+    height: 5%;
+    padding: 3%;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+  
+  .VoltearCarta {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    height: 5%;
+    padding: 2% 1%;
+    border-radius: 20px;
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    z-index: 10;
+    line-height: 1.6;
+    opacity: 0;
+    position: fixed;
+    top: 2%;
+    left: 0;
+    color: white;
+    background: linear-gradient(-20deg, #eab3a0e7 20%, #a76f6fdc 60%);
+  }
+  
+  
+ 
+  
+  @media screen and (max-width: 430px) {
+    .VoltearCarta {
+      font-size: 1rem;
+      text-align: justify;
+      height: 12%;
+    }
+    main {
+      margin-top: 2%;
+      padding: 0 0.5%;
+      gap: 2%;
+    }
+  }
+  
+.MensajeGanaste {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  padding: 2% 0;
+  z-index: 9;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  color: white;
+  
+}
+
+.BotonGanaste {
+  cursor: default;
+  user-select: none;
+  background: linear-gradient(-20deg, #eab3a0b9 20%, #a76f6fbd 60%);
+  height: 5%;
+  padding: 3%;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  font-family: 'Montserrat', Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  text-decoration: none;
+  color: white;
+}

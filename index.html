@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Rock</title>
+    <link rel="icon" href="assets/favicon.png" type="image/png">
+    <meta name="robots" content="index">
+		<meta name="keyword" content="This app is a videoGame made with pure HTML and CSS">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="logic.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html"><h1 id="Mini">Memory Rock</h1></a>
+      </div>
+      <a href="index.html" class="boton">
+        Start Again
+      </a>
+    </header>
+    <input type="radio" id="D1" name="Azar" />
+    <input type="radio" id="D2" name="Azar" />
+    <input type="radio" id="D3" name="Azar" />
+    <input type="radio" id="D4" name="Azar" />
+    <input type="radio" id="D5" name="Azar" />
+    <input type="radio" id="D6" name="Azar" />
+    <label class="GenerarAzar" for="D1"><span class="Iniciar">Start Game</span></label><!---->
+    <label class="GenerarAzar" for="D2"><span class="Iniciar">Start Game</span></label>
+    <label class="GenerarAzar" for="D3"><span class="Iniciar">Start Game</span></label>
+    <label class="GenerarAzar" for="D4"><span class="Iniciar">Start Game</span></label>
+    <label class="GenerarAzar" for="D5"><span class="Iniciar">Start Game</span></label>
+    <label class="GenerarAzar" for="D6"><span class="Iniciar">Start Game</span></label>
+    <main>
+      <input type="checkbox" id="PinkFloyd1">
+      <input type="checkbox" id="PinkFloyd2">
+      <input type="checkbox" id="ACDC1">
+      <input type="checkbox" id="ACDC2">
+      <input type="checkbox" id="ArcticMonkeys1">
+      <input type="checkbox" id="ArcticMonkeys2">
+      <input type="checkbox" id="AeroSmith1">
+      <input type="checkbox" id="AeroSmith2">
+      <input type="checkbox" id="GreenDay1">
+      <input type="checkbox" id="GreenDay2">
+      <input type="checkbox" id="GunsNRoses1">
+      <input type="checkbox" id="GunsNRoses2">
+      <input type="checkbox" id="MotleyCrue1" >
+      <input type="checkbox" id="MotleyCrue2" >
+      <input type="checkbox" id="Nirvana1" >
+      <input type="checkbox" id="Nirvana2">
+      <label for="PinkFloyd1" class="Carta1">
+        <div class="CartaInterior">
+          <div class="CaraFrontal">
+          <!-- Parte que oculta la imagen -->
+          </div>
+          <div class="CaraPosterior">
+            <img
+              src="assets/darkside.png"
+              alt="Avatar"
+            />
+          </div>
+        </div>
+      </label>
+      <label for="PinkFloyd2" class="Carta2">
+        <div class="CartaInterior">
+          <div class="CaraFrontal">
+          <!-- Parte que oculta la imagen -->
+          </div>
+          <div class="CaraPosterior">
+            <img
+              src="assets/darkside.png"
+              alt="Avatar"
+            />
+          </div>
+        </div>
+      </label>
+      <label for="ACDC1" class="Carta3">
+        <div class="CartaInterior">
+          <div class="CaraFrontal">
+            <!-- Parte que oculta la imagen -->
+          </div>
+          <div class="CaraPosterior">
+            <img
+              src="assets/ACDC.png"
+              alt="Avatar"
+            />
+          </div>
+        </div>
+      </label>
+      <label for="ACDC2" class="Carta4">
+        <div class="CartaInterior">
+          <div class="CaraFrontal">
+            <!-- Parte que oculta la imagen -->
+          </div>
+          <div class="CaraPosterior">
+            <img
+              src="assets/ACDC.png"
+              alt="Avatar"
+            />
+          </div>
+        </div>
+      </label>
+      <label for="ArcticMonkeys1" class="Carta5">
+        <div class="CartaInterior">
+          <div class="CaraFrontal">
+            <!-- Parte que oculta la imagen -->
+          </div>
+          <div class="CaraPosterior">
+            <img
+              src="assets/artic-monkeys.jpg"
+              alt="Avatar"
+            />
+          </div>
+        </div>
+      </label>
+      <label for="ArcticMonkeys2" class="Carta6">
+        <div class="CartaInterior">
+          <div class="CaraFrontal">
+            <!-- Parte que oculta la imagen -->
+          </div>
+          <div class="CaraPosterior">
+            <img
+              src="assets/artic-monkeys.jpg"
+              alt="Avatar"
+            />
+          </div>
+        </div>
+      </label>
+      <label for="AeroSmith1" class="Carta7">
+        <div class="CartaInterior">
+          <div class="CaraFrontal">
+            <!-- Parte que oculta la imagen -->
+          </div>
+          <div class="CaraPosterior">
+            <img
+              src="assets/aerosmithh.jpg"
+              alt="Avatar"
+            />
+          </div>
+        </div>
+      </label>
+      <label for="AeroSmith2" class="Carta8">
+        <div class="CartaInterior">
+          <div class="CaraFrontal">
+            <!-- Parte que oculta la imagen -->
+          </div>
+          <div class="CaraPosterior">
+            <img
+              src="assets/aerosmithh.jpg"
+              alt="Avatar"
+            />
+          </div>
+        </div>
+      </label>
+      <label for="GreenDay1" class="Carta9">
+        <div class="CartaInterior">
+          <div class="CaraFrontal">
+            <!-- Parte que oculta la imagen -->
+          </div>
+          <div class="CaraPosterior">
+            <img
+              src="assets/green day.jpg"
+              alt="Avatar"
+            />
+          </div>
+        </div>
+      </label>
+      <label for="GreenDay2" class="Carta10">
+        <div class="CartaInterior">
+          <div class="CaraFrontal">
+            <!-- Parte que oculta la imagen -->
+          </div>
+          <div class="CaraPosterior">
+            <img
+              src="assets/green day.jpg"
+              alt="Avatar"
+            />
+          </div>
+        </div>
+      </label>
+      <label for="GunsNRoses1" class="Carta11">
+        <div class="CartaInterior">
+          <div class="CaraFrontal">
+            <!-- Parte que oculta la imagen -->
+          </div>
+          <div class="CaraPosterior">
+            <img
+              src="assets/guns-n-roses-.webp"
+              alt="Avatar"
+            />
+          </div>
+        </div>
+      </label>
+      <label for="GunsNRoses2" class="Carta12">
+        <div class="CartaInterior">
+          <div class="CaraFrontal">
+            <!-- Parte que oculta la imagen -->
+          </div>
+          <div class="CaraPosterior">
+            <img
+              src="assets/guns-n-roses-.webp"
+              alt="Avatar"
+            />
+          </div>
+        </div>
+      </label>
+      <label for="MotleyCrue1" class="Carta13">
+        <div class="CartaInterior">
+          <div class="CaraFrontal">
+            <!-- Parte que oculta la imagen -->
+          </div>
+          <div class="CaraPosterior">
+            <img
+              src="assets/motley.crue.jpg"
+              alt="Avatar"
+            />
+          </div>
+        </div>
+      </label>
+      <label for="MotleyCrue2" class="Carta14">
+        <div class="CartaInterior">
+          <div class="CaraFrontal">
+            <!-- Parte que oculta la imagen -->
+          </div>
+          <div class="CaraPosterior">
+            <img
+              src="assets/motley.crue.jpg"
+              alt="Avatar"
+            />
+          </div>
+        </div>
+      </label>
+      <label for="Nirvana1" class="Carta15">
+        <div class="CartaInterior">
+          <div class="CaraFrontal">
+            <!-- Parte que oculta la imagen -->
+          </div>
+          <div class="CaraPosterior">
+            <img
+              src="assets/nirvana.jpeg"
+              alt="Avatar"
+            />
+          </div>
+        </div>
+      </label>
+      <label for="Nirvana2" class="Carta16">
+        <div class="CartaInterior">
+          <div class="CaraFrontal">
+            <!-- Parte que oculta la imagen -->
+          </div>
+          <div class="CaraPosterior">
+            <img
+              src="assets/nirvana.jpeg"
+              alt="Avatar"
+            />
+          </div>
+        </div>
+      </label>
+      <div class="MensajeGanaste">
+        <h1>!Has ganado!</h1>
+        <a href="index.html" class="BotonGanaste">Start Again</a>
+      </div>
+      <div class="VoltearCarta">
+          Por favor, gira las cartas seleccionadas, es una combinación incorrecta
+      </div>
+    </main>  
+  </body>
+</html>
